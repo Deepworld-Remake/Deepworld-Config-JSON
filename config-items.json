@@ -1,6 +1,15 @@
 {
    "items": {
+      "air": {
+         "code": 0,
+         "visible": false,
+         "invulnerable": true,
+         "placeover": true,
+         "char": " ",
+         "hintt": "A friendly combination of oyxgen and other elements that helps one avoid death."
+      },
       "front-block": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -9,6 +18,7 @@
          "shadow": true
       },
       "front-block-metal": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -18,6 +28,7 @@
          "border_shadow": true
       },
       "front-block-wood": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -30,29 +41,29 @@
          "mod": "rotation",
          "rotation": "mirror"
       },
-      "air": {
-         "code": 0,
-         "visible": false,
-         "invulnerable": true,
-         "placeover": true,
-         "char": " ",
-         "hintt": "A friendly combination of oyxgen and other elements that helps one avoid death."
-      },
       "base": {
+         "category": "base",
+         "layer": "base",
          "invulnerable": true,
          "tileable": true,
          "gui": false,
          "excavatable": true
       },
       "base/empty": {
+         "category": "base",
+         "layer": "base",
          "invulnerable": true,
          "tileable": true,
          "gui": false,
          "excavatable": false,
          "code": 1,
-         "visible": false
+         "visible": false,
+         "inventory_frame": "inventory/none",
+         "inventory sprite": "none"
       },
       "base/earth": {
+         "category": "base",
+         "layer": "base",
          "invulnerable": true,
          "tileable": true,
          "gui": false,
@@ -67,9 +78,12 @@
          ],
          "border_continuity_color": "1a0e00",
          "title": "Earth Backdrop",
-         "hintt": "A rare handheld chunk of earth backdrop, sometimes referred to as \"Bruce\"."
+         "hintt": "A rare handheld chunk of earth backdrop, sometimes referred to as \"Bruce\".",
+         "inventory_frame": "biome-temperate/temperate/earth-base"
       },
       "base/sandstone": {
+         "category": "base",
+         "layer": "base",
          "invulnerable": true,
          "tileable": true,
          "gui": false,
@@ -87,6 +101,8 @@
          "title": "Sandstone Backdrop"
       },
       "base/limestone": {
+         "category": "base",
+         "layer": "base",
          "invulnerable": true,
          "tileable": true,
          "gui": false,
@@ -157,6 +173,8 @@
          "excavatable": true
       },
       "base/water": {
+         "category": "base",
+         "layer": "base",
          "invulnerable": true,
          "tileable": true,
          "gui": false,
@@ -166,6 +184,8 @@
          "hintt": "The endless blue sea, offering solace, tranquility, and that crushing feeling of millions of tons of water pushing you into the depths."
       },
       "base/vent": {
+         "category": "base",
+         "layer": "base",
          "invulnerable": true,
          "tileable": true,
          "gui": false,
@@ -193,6 +213,8 @@
          ]
       },
       "base/vent-cap": {
+         "category": "base",
+         "layer": "base",
          "invulnerable": true,
          "tileable": true,
          "gui": false,
@@ -216,6 +238,8 @@
          ]
       },
       "base/drawing": {
+         "category": "base",
+         "layer": "base",
          "invulnerable": true,
          "tileable": true,
          "gui": false,
@@ -230,6 +254,8 @@
          "sprite_z": 7
       },
       "base/drawing-modern": {
+         "category": "base",
+         "layer": "base",
          "invulnerable": true,
          "tileable": true,
          "gui": false,
@@ -251,6 +277,8 @@
          "hintt": "Modern graffiti, drawn by survivors of the apocalypse or the recently deceased."
       },
       "base/drawing-historical": {
+         "category": "base",
+         "layer": "base",
          "invulnerable": true,
          "tileable": true,
          "gui": false,
@@ -272,6 +300,8 @@
          "hintt": "Ancient graffiti, artistic representations of a bygone era or some other unknown origin."
       },
       "base/drawing-danger": {
+         "category": "base",
+         "layer": "base",
          "invulnerable": true,
          "tileable": true,
          "gui": false,
@@ -326,6 +356,8 @@
          ]
       },
       "liquid/water": {
+         "layer": "liquid",
+         "category": "liquid",
          "code": 100,
          "color": "59c2fc",
          "tileable": true,
@@ -350,6 +382,8 @@
          ]
       },
       "liquid/acid": {
+         "layer": "liquid",
+         "category": "liquid",
          "code": 101,
          "color": "63f85f",
          "tileable": true,
@@ -381,6 +415,8 @@
          ]
       },
       "liquid/magma": {
+         "layer": "liquid",
+         "category": "liquid",
          "code": 102,
          "color": "ff1610",
          "tileable": true,
@@ -414,6 +450,7 @@
          ]
       },
       "back-tile": {
+         "layer": "back",
          "level": 1,
          "tileable": true,
          "opaque": true,
@@ -426,6 +463,7 @@
          }
       },
       "back/stone": {
+         "layer": "back",
          "level": 1,
          "tileable": true,
          "opaque": true,
@@ -450,6 +488,7 @@
          "hintt": "Common stone backing, frequently found decayed and crumbling both above and belowground."
       },
       "back/iron": {
+         "layer": "back",
          "level": 1,
          "tileable": true,
          "opaque": true,
@@ -476,6 +515,7 @@
          "hintt": "Solid iron backing, useful for large-scale industrial projects and slightly hardier than brass and copper."
       },
       "back/copper": {
+         "layer": "back",
          "level": 1,
          "tileable": true,
          "opaque": true,
@@ -502,6 +542,7 @@
          "hintt": "Solid copper backing, often used to contain acid pools in abandoned industrial warehouses."
       },
       "back/brass": {
+         "layer": "back",
          "level": 2,
          "tileable": true,
          "opaque": true,
@@ -528,6 +569,7 @@
          "hintt": "Solid brass backing, offering both toughness and a splash of color for all your metallic needs."
       },
       "back/earth-brick": {
+         "layer": "back",
          "level": 1,
          "tileable": true,
          "opaque": true,
@@ -554,6 +596,7 @@
          "hintt": "For the absolute budget builder, you can't beat the affordability of earth bricks. Just dig and build and dig and build and repeat!"
       },
       "back/adobe": {
+         "layer": "back",
          "level": 1,
          "tileable": true,
          "opaque": true,
@@ -583,6 +626,7 @@
          "hintt": "Adobe backing is very simple to construct, requiring mostly just earth. You may look like a cheapskate, but at least your house will be huge."
       },
       "back/cork": {
+         "layer": "back",
          "level": 2,
          "tileable": true,
          "opaque": true,
@@ -604,6 +648,7 @@
          "hintt": "Cork is known mostly for its tremendous ability to keep wine tasty, but it also serves as a nice decorative backdrop for butterflies and other such curiosities."
       },
       "back/bloodstone": {
+         "layer": "back",
          "level": 5,
          "tileable": true,
          "opaque": true,
@@ -631,6 +676,7 @@
          "hintt": "Bloodstone backing provides dark and mysterious overtones to building projects. Bloodstone itself is only found in Hell worlds."
       },
       "back/marble": {
+         "layer": "back",
          "level": 5,
          "tileable": true,
          "opaque": true,
@@ -658,6 +704,7 @@
          "hintt": "Marble backing makes any structure look fancy. Goes great with columns, statues, and Greek gods."
       },
       "back/sandstone": {
+         "layer": "back",
          "level": 1,
          "tileable": true,
          "opaque": true,
@@ -684,6 +731,7 @@
          ]
       },
       "back/limestone": {
+         "layer": "back",
          "level": 1,
          "tileable": true,
          "opaque": true,
@@ -709,6 +757,7 @@
          ]
       },
       "back/cobblestone-gray": {
+         "layer": "back",
          "level": 1,
          "tileable": true,
          "opaque": true,
@@ -736,6 +785,7 @@
          "hintt": "A detailed backdrop to complement stone or gray cobblestone buildings."
       },
       "back/cobblestone-tan": {
+         "layer": "back",
          "level": 1,
          "tileable": true,
          "opaque": true,
@@ -764,6 +814,7 @@
          "hintt": "A detailed backdrop to complement sandstone or tan cobblestone buildings."
       },
       "back/brick": {
+         "layer": "back",
          "level": 1,
          "tileable": true,
          "opaque": true,
@@ -791,6 +842,7 @@
          "hintt": "Classic red brick backing makes for an excellent home or firehouse."
       },
       "back/brick-mixed": {
+         "layer": "back",
          "level": 1,
          "tileable": true,
          "opaque": true,
@@ -822,6 +874,7 @@
          "hintt": "Mixed brick backing gives you that classic redbrick feel plus 15% extra spiffyness."
       },
       "back/brick-tan": {
+         "layer": "back",
          "level": 1,
          "tileable": true,
          "opaque": true,
@@ -852,6 +905,7 @@
          "hintt": "Tan brick backing goes great with Deepworld's many earth tones. Including earth itself!"
       },
       "back/brick-blue": {
+         "layer": "back",
          "level": 1,
          "tileable": true,
          "opaque": true,
@@ -882,6 +936,7 @@
          "hintt": "Everyone expects a RED brick. Blow their hats off with this blueish alternative!"
       },
       "back/wood": {
+         "layer": "back",
          "level": 1,
          "tileable": true,
          "opaque": true,
@@ -904,6 +959,7 @@
          "hintt": "Standard wood backing is a mainstay in old houses and warehouses, where it often molds and serves as fodder for scrap wood collection."
       },
       "back/wood-panel": {
+         "layer": "back",
          "level": 1,
          "tileable": true,
          "opaque": true,
@@ -926,6 +982,7 @@
          "hintt": "Wood panelling is a basic construction backing, ideal for most civilized building projects."
       },
       "back/wood-panel-decorative": {
+         "layer": "back",
          "level": 3,
          "tileable": true,
          "opaque": true,
@@ -952,6 +1009,7 @@
          "hintt": "When panelling just doesn't look nice enough, try this fancy panelling to add a little extra pizazz."
       },
       "back/paper": {
+         "layer": "back",
          "level": 1,
          "tileable": true,
          "opaque": true,
@@ -973,6 +1031,7 @@
          "hintt": "Plain paper is mostly used as an ingredient for fancier wallpapers, but it's good for simple decorating in a pinch."
       },
       "back/wallpaper": {
+         "layer": "back",
          "level": 1,
          "tileable": true,
          "opaque": true,
@@ -990,6 +1049,7 @@
          "group": "wallpaper"
       },
       "back/wallpaper-1": {
+         "layer": "back",
          "level": 1,
          "tileable": true,
          "opaque": true,
@@ -1014,6 +1074,7 @@
          "hintt": "Damask patterns are the king of Victorian wallpapers, and golden damask is surely the shiniest way to show them off."
       },
       "back/wallpaper-2": {
+         "layer": "back",
          "level": 1,
          "tileable": true,
          "opaque": true,
@@ -1038,6 +1099,7 @@
          "hintt": "This worn-in wallpaper gives a great abandoned-yet-once-stylish feel for all your bunker needs."
       },
       "back/wallpaper-3": {
+         "layer": "back",
          "level": 3,
          "tileable": true,
          "opaque": true,
@@ -1066,6 +1128,7 @@
          "hintt": "Art Deco stylings are key for the forward-thinking home decorator."
       },
       "back/wallpaper-4": {
+         "layer": "back",
          "level": 3,
          "tileable": true,
          "opaque": true,
@@ -1094,6 +1157,7 @@
          "hintt": "Everybody loves shapes! Put some on your wall with this fine wallpaper."
       },
       "back/wallpaper-5": {
+         "layer": "back",
          "level": 6,
          "tileable": true,
          "opaque": true,
@@ -1122,6 +1186,7 @@
          "hintt": "Make a bold statement with this bright twist on the damask classic. Goes great with an acid swimming pool!"
       },
       "back/wallpaper-6": {
+         "layer": "back",
          "level": 6,
          "tileable": true,
          "opaque": true,
@@ -1149,6 +1214,7 @@
          "title": "Red Damask Wallpaper"
       },
       "back/wallpaper-7": {
+         "layer": "back",
          "level": 10,
          "tileable": true,
          "opaque": true,
@@ -1177,6 +1243,7 @@
          "hintt": "Showcase your nautical sensibilities with this lovely crab-themed wallpaper. Hey, who's hungry for some crab legs!"
       },
       "back/wallpaper-8": {
+         "layer": "back",
          "level": 10,
          "tileable": true,
          "opaque": true,
@@ -1204,6 +1271,7 @@
          "title": "Yellow Damask Wallpaper"
       },
       "back/wallpaper-9": {
+         "layer": "back",
          "level": 15,
          "tileable": true,
          "opaque": true,
@@ -1231,6 +1299,7 @@
          "title": "Pink Quatrefoil Wallpaper"
       },
       "back/wallpaper-10": {
+         "layer": "back",
          "level": 1,
          "tileable": true,
          "opaque": true,
@@ -1254,6 +1323,7 @@
          "title": "Vibrant Floral Wallpaper"
       },
       "back/wallpaper-11": {
+         "layer": "back",
          "level": 1,
          "tileable": true,
          "opaque": true,
@@ -1277,6 +1347,7 @@
          "title": "Blue Lattice Wallpaper"
       },
       "back/wallpaper-12": {
+         "layer": "back",
          "level": 1,
          "tileable": true,
          "opaque": true,
@@ -1301,6 +1372,8 @@
          "hintt": "SPACE! In your bedroom. Sweet."
       },
       "back/glass": {
+         "layer": "back",
+         "category": "back",
          "code": 602,
          "level": 2,
          "whole": true,
@@ -1320,6 +1393,8 @@
          }
       },
       "back/glass-divided": {
+         "layer": "back",
+         "category": "back",
          "code": 603,
          "level": 3,
          "whole": true,
@@ -1340,6 +1415,8 @@
          }
       },
       "back/scaffold": {
+         "category": "back",
+         "layer": "back",
          "code": 256,
          "level": 4,
          "tileable": true,
@@ -1395,6 +1472,7 @@
          }
       },
       "ground/earthy": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -1427,6 +1505,7 @@
          ]
       },
       "ground/earth": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -1505,6 +1584,7 @@
          "title": "Disintegrating Earth"
       },
       "ground/earth-mid": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -1555,6 +1635,7 @@
          }
       },
       "ground/earth-deep": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -1605,6 +1686,7 @@
          }
       },
       "ground/earth-very-deep": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -1655,6 +1737,7 @@
          }
       },
       "ground/deep-earth": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -1705,6 +1788,7 @@
          }
       },
       "ground/deep-earth-mid": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -1756,6 +1840,7 @@
          }
       },
       "ground/deep-earth-deep": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -1807,6 +1892,7 @@
          }
       },
       "ground/deep-earth-very-deep": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -1858,6 +1944,7 @@
          }
       },
       "ground/sandstone": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -1895,6 +1982,7 @@
          "hintt": "Raw sandstone is found in plain and desert worlds, and is useful mainly for creating sandstone brick and backdrop."
       },
       "ground/limestone": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -1932,6 +2020,7 @@
          "hintt": "Raw limestone is found in plain and arctic worlds, and is useful mainly for creating limestone brick and backdrop."
       },
       "ground/bone-wall": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -1999,6 +2088,7 @@
          "wiki": false
       },
       "ground/sand": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -2064,6 +2154,7 @@
          "hintt": "Flax is a malleable substance used to make rope, balloons, lighting, and all kinds of miscellaneous items. It can be harvested quite easily from many plants."
       },
       "ground/earth-compost": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -2120,6 +2211,7 @@
          "hintt": "Compost grows plants when placed in rainy purified areas. It can be generated by visiting a composter, a large machine found underground in many worlds."
       },
       "ground/earth-accent": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -2155,6 +2247,7 @@
          "carryable": false
       },
       "ground/earth-accent-wood": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -2192,6 +2285,7 @@
          "gui": false
       },
       "ground/earth-accent-rock": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -2230,6 +2324,7 @@
          "hint": "@rock"
       },
       "ground/earth-accent-root": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -2269,6 +2364,7 @@
          "group": "root"
       },
       "ground/earthy-accent-vine": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -2305,6 +2401,7 @@
          "inventory": "ground/resin"
       },
       "ground/vine": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -2344,6 +2441,7 @@
          "gui": false
       },
       "ground/vine-end": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -2387,6 +2485,7 @@
          "gui": false
       },
       "ground/petrified-wood-1": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -2434,6 +2533,7 @@
          "code": 522
       },
       "ground/petrified-wood-2": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -2481,6 +2581,7 @@
          "code": 523
       },
       "ground/petrified-wood-3": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -2528,6 +2629,7 @@
          "code": 524
       },
       "ground/petrified-wood-4": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -2575,6 +2677,7 @@
          "code": 525
       },
       "ground/petrified-wood-large-1": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -2622,6 +2725,7 @@
          "code": 526
       },
       "ground/petrified-wood-large-2": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -2669,6 +2773,7 @@
          "code": 527
       },
       "ground/earth-rock": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -2723,6 +2828,7 @@
          ]
       },
       "ground/earth-rock-wide-1": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -2771,6 +2877,7 @@
          "code": 529
       },
       "ground/earth-rock-big-1": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -2823,6 +2930,7 @@
          ]
       },
       "ground/earth-root-1": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -2872,6 +2980,7 @@
          "code": 531
       },
       "ground/earth-root-wide-1": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -2921,6 +3030,7 @@
          "code": 532
       },
       "ground/earth-root-wide-2": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -2970,6 +3080,7 @@
          "code": 533
       },
       "ground/earth-root-wide-3": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -3019,6 +3130,7 @@
          "code": 534
       },
       "ground/earth-root-wide-4": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -3068,6 +3180,7 @@
          "code": 535
       },
       "ground/earth-root-tall-1": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -3117,6 +3230,7 @@
          "code": 536
       },
       "ground/earth-root-big-1": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -3166,6 +3280,7 @@
          "code": 537
       },
       "ground/earth-root-huge-1": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -3220,6 +3335,7 @@
          "sprite_z": -1
       },
       "ground/fossil-fish-buried": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -3288,6 +3404,7 @@
          "inventory_frame": "inventory/ground/fossil-fish"
       },
       "ground/fossil-shell-buried": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -3355,6 +3472,7 @@
          "inventory_frame": "inventory/ground/fossil-shell"
       },
       "ground/fossil-trilobyte-buried": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -3422,6 +3540,7 @@
          "inventory_frame": "inventory/ground/fossil-trilobyte"
       },
       "ground/fossil-miner-buried": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -3499,6 +3618,7 @@
          ]
       },
       "ground/fossil-mammoth-buried": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -3577,6 +3697,7 @@
          ]
       },
       "ground/fossil-oldone-buried": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -3655,6 +3776,7 @@
          ]
       },
       "ground/fossil-pterodactyl-buried": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -3732,6 +3854,7 @@
          ]
       },
       "ground/fossil-trex-buried": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -3821,6 +3944,7 @@
          "hintt": "Sticky resin is an exceptionally useful material used to create many kinds of items. Roots, vines, and terrapus eggs are all a good source for it (just remember to wash your hands after scraping it off)."
       },
       "ground/clay-chunk": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -3858,6 +3982,7 @@
          "hintt": "@clay"
       },
       "ground/clay": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -3907,6 +4032,7 @@
          "stealable": true
       },
       "ground/clay-accent": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -3950,6 +4076,7 @@
          "carryable": false
       },
       "ground/clay-1": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -4003,6 +4130,7 @@
          "code": 541
       },
       "ground/clay-2": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -4056,6 +4184,7 @@
          "code": 542
       },
       "ground/clay-3": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -4109,6 +4238,7 @@
          "code": 543
       },
       "ground/clay-4": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -4162,6 +4292,7 @@
          "code": 544
       },
       "ground/clay-5": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -4215,6 +4346,7 @@
          "code": 545
       },
       "ground/clay-6": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -4268,6 +4400,7 @@
          "code": 546
       },
       "ground/clay-7": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -4321,6 +4454,7 @@
          "code": 547
       },
       "ground/clay-8": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -4374,6 +4508,7 @@
          "code": 548
       },
       "ground/clay-9": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -4427,6 +4562,7 @@
          "code": 549
       },
       "ground/mineral": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -4468,6 +4604,7 @@
          }
       },
       "ground/copper": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -4519,6 +4656,7 @@
          "inventory": "ground/copper-ore"
       },
       "ground/zinc": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -4570,6 +4708,7 @@
          "inventory": "ground/zinc-ore"
       },
       "ground/iron": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -4621,6 +4760,7 @@
          "inventory": "ground/iron-ore"
       },
       "ground/quartz": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -4672,6 +4812,7 @@
          "inventory": "ground/quartz-ore"
       },
       "ground/sulfur": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -4723,6 +4864,7 @@
          "inventory": "ground/sulfur-ore"
       },
       "ground/lead": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -4774,6 +4916,7 @@
          "inventory": "ground/lead-ore"
       },
       "ground/bloodstone": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -4825,6 +4968,7 @@
          "inventory": "ground/bloodstone-ore"
       },
       "ground/marble": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -4876,6 +5020,7 @@
          "inventory": "ground/marble-ore"
       },
       "ground/diamond": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -4929,6 +5074,7 @@
          "rarity": 4
       },
       "ground/platinum": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -4982,6 +5128,7 @@
          "rarity": 4
       },
       "ground/beryllium": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -5033,6 +5180,8 @@
          "rarity": 3
       },
       "ground/ore": {
+         "category": "ground",
+         "layer": "front",
          "mod": "stack",
          "craftable": false,
          "hint": "@ore",
@@ -5040,6 +5189,8 @@
          "karma": -1
       },
       "ground/copper-ore": {
+         "category": "ground",
+         "layer": "front",
          "mod": "stack",
          "craftable": false,
          "hint": "@ore",
@@ -5053,6 +5204,8 @@
          "hintt": "Raw copper is commonly combined with zinc to create brass, a metal with many construction uses."
       },
       "ground/zinc-ore": {
+         "category": "ground",
+         "layer": "front",
          "mod": "stack",
          "craftable": false,
          "hint": "@ore",
@@ -5066,6 +5219,8 @@
          "hintt": "Raw zinc is commonly combined with copper to create brass, a metal with many construction uses."
       },
       "ground/iron-ore": {
+         "category": "ground",
+         "layer": "front",
          "mod": "stack",
          "craftable": false,
          "hint": "@ore",
@@ -5079,6 +5234,8 @@
          "hintt": "Raw iron ore can be used to make iron blocks and backdrops."
       },
       "ground/quartz-ore": {
+         "category": "ground",
+         "layer": "front",
          "mod": "stack",
          "craftable": false,
          "hint": "@ore",
@@ -5092,6 +5249,8 @@
          "hintt": "Quartz has interesting electric properties which make it ideal for the construction of machines like clocks, switches, and other things that make you shout \"SCIENCE!\""
       },
       "ground/sulfur-ore": {
+         "category": "ground",
+         "layer": "front",
          "mod": "stack",
          "craftable": false,
          "hint": "@ore",
@@ -5105,6 +5264,8 @@
          "hintt": "Sulfur may be stinky, but it's necessary to create gunpowder. Which is useful for blowing up people who call you stinky."
       },
       "ground/lead-ore": {
+         "category": "ground",
+         "layer": "front",
          "mod": "stack",
          "craftable": false,
          "hint": "@ore",
@@ -5117,6 +5278,8 @@
          ]
       },
       "ground/bloodstone-ore": {
+         "category": "ground",
+         "layer": "front",
          "mod": "stack",
          "craftable": false,
          "hint": "@ore",
@@ -5129,6 +5292,8 @@
          ]
       },
       "ground/marble-ore": {
+         "category": "ground",
+         "layer": "front",
          "mod": "stack",
          "craftable": false,
          "hint": "@ore",
@@ -5141,6 +5306,8 @@
          ]
       },
       "ground/diamond-ore": {
+         "category": "ground",
+         "layer": "front",
          "mod": "stack",
          "craftable": false,
          "hint": "@ore",
@@ -5156,6 +5323,8 @@
          "rarity": 4
       },
       "ground/beryllium-ore": {
+         "category": "ground",
+         "layer": "front",
          "mod": "stack",
          "craftable": false,
          "hint": "@ore",
@@ -5168,6 +5337,8 @@
          ]
       },
       "ground/platinum-ore": {
+         "category": "ground",
+         "layer": "front",
          "mod": "stack",
          "craftable": false,
          "hint": "@ore",
@@ -5315,6 +5486,7 @@
          "title": "Large Geyser"
       },
       "ground/crystal": {
+         "layer": "front",
          "color": "3169bd",
          "material": "glass",
          "damage": [
@@ -5331,6 +5503,7 @@
          "group": "crystal"
       },
       "ground/crystal-blue": {
+         "layer": "front",
          "color": "3169bd",
          "material": "glass",
          "damage": [
@@ -5351,6 +5524,7 @@
          "rarity": 3
       },
       "ground/crystal-blue-1": {
+         "layer": "front",
          "color": "3169bd",
          "material": "glass",
          "damage": [
@@ -5372,6 +5546,7 @@
          "code": 580
       },
       "ground/crystal-blue-2": {
+         "layer": "front",
          "color": "3169bd",
          "material": "glass",
          "damage": [
@@ -5393,6 +5568,7 @@
          "code": 581
       },
       "ground/crystal-blue-3": {
+         "layer": "front",
          "color": "3169bd",
          "material": "glass",
          "damage": [
@@ -5414,6 +5590,7 @@
          "code": 582
       },
       "ground/crystal-blue-4": {
+         "layer": "front",
          "color": "3169bd",
          "material": "glass",
          "damage": [
@@ -5435,6 +5612,7 @@
          "code": 583
       },
       "ground/crystal-purple-1": {
+         "layer": "front",
          "color": "3169bd",
          "material": "glass",
          "damage": [
@@ -5449,12 +5627,13 @@
          "toughness": 10,
          "report": true,
          "group": "crystal",
-         "light_color": null,
+         "light_color": "5e2388",
          "code": 584,
          "karma": -10,
          "rarity": 4
       },
       "ground/crystal-purple-large": {
+         "layer": "front",
          "color": "3169bd",
          "material": "glass",
          "damage": [
@@ -5473,6 +5652,7 @@
          "rarity": 4
       },
       "ground/crystal-red-1": {
+         "layer": "front",
          "color": "3169bd",
          "material": "glass",
          "damage": [
@@ -5493,6 +5673,7 @@
          "rarity": 4
       },
       "ground/crystal-red-large": {
+         "layer": "front",
          "color": "3169bd",
          "material": "glass",
          "damage": [
@@ -5511,6 +5692,7 @@
          "rarity": 4
       },
       "ground/crystal-orange": {
+         "layer": "front",
          "color": "3169bd",
          "material": "glass",
          "damage": [
@@ -5531,6 +5713,7 @@
          "karma": -15
       },
       "ground/crystal-green-small": {
+         "layer": "front",
          "color": "3169bd",
          "material": "glass",
          "damage": [
@@ -5550,6 +5733,7 @@
          "karma": -10
       },
       "ground/crystal-green-large": {
+         "layer": "front",
          "color": "3169bd",
          "material": "glass",
          "damage": [
@@ -5569,6 +5753,7 @@
          "karma": -15
       },
       "ground/crystal-white-small": {
+         "layer": "front",
          "color": "3169bd",
          "material": "glass",
          "damage": [
@@ -5587,6 +5772,7 @@
          "light_color": "ffffff"
       },
       "ground/crystal-white-large": {
+         "layer": "front",
          "color": "3169bd",
          "material": "glass",
          "damage": [
@@ -5606,6 +5792,7 @@
          "karma": -15
       },
       "ground/crystal-yellow": {
+         "layer": "front",
          "color": "3169bd",
          "material": "glass",
          "damage": [
@@ -5625,6 +5812,7 @@
          "karma": -15
       },
       "ground/crystal-rainbow": {
+         "layer": "front",
          "color": "3169bd",
          "material": "glass",
          "damage": [
@@ -5640,6 +5828,11 @@
          "report": true,
          "group": "crystal",
          "code": 58,
+         "block_size": [
+            2,
+            3
+         ],
+         "whole": true,
          "light_color": "ff76f4",
          "karma": -25
       },
@@ -5906,6 +6099,7 @@
          "group": "egg"
       },
       "ground/bedrock": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -5933,6 +6127,7 @@
          ]
       },
       "ground/blackrock": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -5988,6 +6183,7 @@
          "stealable": true
       },
       "building/wood-board": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -6007,6 +6203,7 @@
          "border_shadow": true
       },
       "building/earth-brick": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -6030,6 +6227,7 @@
          "hintt": "For the absolute budget builder, you can't beat the affordability of earth bricks. Just dig and build and dig and build and repeat!"
       },
       "building/adobe": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -6055,6 +6253,7 @@
          "title": "Adobe Brick"
       },
       "building/brick": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -6077,6 +6276,7 @@
          "group": "brick"
       },
       "building/brick-mixed": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -6103,6 +6303,7 @@
          "group": "brick"
       },
       "building/brick-tan": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -6130,6 +6331,7 @@
          "group": "brick"
       },
       "building/brick-blue": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -6217,12 +6419,18 @@
          "title": "Knotted Rope"
       },
       "building/door-wood": {
+         "layer": "back",
+         "category": "building",
          "code": 610,
          "color": "515a25",
          "char": "D",
          "material": "wood",
          "inventory sprite": "building/door-wood-open",
          "shape": "polygonal",
+         "size": [
+            1,
+            2
+         ],
          "title": "Wood Door",
          "hint": "@door",
          "door": true,
@@ -6245,6 +6453,7 @@
          }
       },
       "building/wood-decorative": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -6314,6 +6523,7 @@
          "hint": "@trapdoor"
       },
       "building/stone": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -6334,6 +6544,7 @@
          "border_shadow": true
       },
       "building/sandstone": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -6356,6 +6567,7 @@
          ]
       },
       "building/limestone": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -6377,6 +6589,7 @@
          ]
       },
       "building/cobblestone-gray": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -6400,6 +6613,7 @@
          ]
       },
       "building/cobblestone-tan": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -6424,6 +6638,7 @@
          ]
       },
       "building/bloodstone": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -6463,6 +6678,7 @@
          "karma": -2
       },
       "building/marble": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -6618,7 +6834,7 @@
          "whole": true,
          "code": 606,
          "sprite-color": "8e53a8",
-         "light_color": null,
+         "light_color": "5e2388",
          "ingredients": [
             "ground/crystal-blue-1",
             "ground/crystal-purple-1",
@@ -6640,6 +6856,8 @@
          ]
       },
       "roofing": {
+         "category": "building",
+         "layer": "front",
          "color": "3a3a3a",
          "material": "wood",
          "shelter": true,
@@ -6647,12 +6865,14 @@
          "decay inventory": "rubble/wood-1"
       },
       "building/roof": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
          "shape": "box",
          "solid": true,
          "shadow": true,
+         "category": "building",
          "color": "3a3a3a",
          "material": "wood",
          "shelter": true,
@@ -6666,6 +6886,8 @@
          "title": "Roofing"
       },
       "building/roof-edge": {
+         "category": "building",
+         "layer": "front",
          "color": "3a3a3a",
          "material": "wood",
          "shelter": true,
@@ -6682,6 +6904,8 @@
          "title": "Small Roof Edge"
       },
       "building/roof-edge-large": {
+         "category": "building",
+         "layer": "front",
          "color": "3a3a3a",
          "material": "wood",
          "shelter": true,
@@ -6709,12 +6933,14 @@
          "title": "Large Roof Edge"
       },
       "building/roof-brown": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
          "shape": "box",
          "solid": true,
          "shadow": true,
+         "category": "building",
          "color": "3a3a3a",
          "material": "wood",
          "shelter": true,
@@ -6732,6 +6958,8 @@
          "title": "Brown Roofing"
       },
       "building/roof-brown-edge": {
+         "category": "building",
+         "layer": "front",
          "color": "3a3a3a",
          "material": "wood",
          "shelter": true,
@@ -6752,6 +6980,8 @@
          "title": "Small Brown Roof Edge"
       },
       "building/roof-brown-edge-large": {
+         "category": "building",
+         "layer": "front",
          "color": "3a3a3a",
          "material": "wood",
          "shelter": true,
@@ -6779,12 +7009,14 @@
          "karma": -1
       },
       "building/roof-spanish": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
          "shape": "box",
          "solid": true,
          "shadow": true,
+         "category": "building",
          "color": "3a3a3a",
          "material": "wood",
          "shelter": true,
@@ -6803,6 +7035,8 @@
          "title": "Spanish Roofing"
       },
       "building/roof-spanish-edge": {
+         "category": "building",
+         "layer": "front",
          "color": "3a3a3a",
          "material": "wood",
          "shelter": true,
@@ -6824,6 +7058,8 @@
          "title": "Small Spanish Roof Edge"
       },
       "building/roof-spanish-edge-large": {
+         "category": "building",
+         "layer": "front",
          "color": "3a3a3a",
          "material": "wood",
          "shelter": true,
@@ -6852,12 +7088,14 @@
          "karma": -1
       },
       "building/roof-brass": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
          "shape": "box",
          "solid": true,
          "shadow": true,
+         "category": "building",
          "color": "3a3a3a",
          "material": "wood",
          "shelter": true,
@@ -6875,6 +7113,8 @@
          "title": "Brass Roofing"
       },
       "building/roof-brass-edge": {
+         "category": "building",
+         "layer": "front",
          "color": "3a3a3a",
          "material": "wood",
          "shelter": true,
@@ -6896,6 +7136,8 @@
          "title": "Small Brass Roof Edge"
       },
       "building/roof-brass-edge-large": {
+         "category": "building",
+         "layer": "front",
          "color": "3a3a3a",
          "material": "wood",
          "shelter": true,
@@ -7038,6 +7280,7 @@
          "karma": -3
       },
       "building/porcelain": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -7127,6 +7370,7 @@
          "karma": -2
       },
       "building/bridge-wood-block": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -7184,6 +7428,7 @@
          "karma": -2
       },
       "building/bridge-stone-block": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -7220,6 +7465,10 @@
          "mod": "rotation",
          "rotation": "mirror",
          "code": 634,
+         "size": [
+            4,
+            3
+         ],
          "material": "metal",
          "toughness": 5,
          "shape": "polygonal",
@@ -7241,6 +7490,7 @@
          "karma": -2
       },
       "building/bridge-block": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -7274,6 +7524,7 @@
          "title": "Metal Railing"
       },
       "building/grate": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -7762,6 +8013,7 @@
          "title": "Marble Demon Statue"
       },
       "building/brass": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -7796,6 +8048,7 @@
          ]
       },
       "building/brass-reinforced": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -7835,9 +8088,15 @@
          ]
       },
       "building/door-brass": {
+         "category": "building",
+         "layer": "front",
          "code": 654,
          "material": "metal",
          "shape": "polygonal",
+         "size": [
+            2,
+            2
+         ],
          "ingredients": [
             [
                "building/brass",
@@ -7939,6 +8198,7 @@
          "toughness": 3
       },
       "building/iron": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -7971,6 +8231,7 @@
          ]
       },
       "building/iron-reinforced": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -8128,6 +8389,7 @@
          ]
       },
       "building/copper": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -8160,6 +8422,7 @@
          ]
       },
       "building/copper-reinforced": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -8260,13 +8523,21 @@
          ]
       },
       "sign": {
+         "category": "sign",
+         "layer": "front",
          "meta": "local",
          "hint": "@sign"
       },
       "signs/small": {
+         "category": "sign",
+         "layer": "front",
          "meta": "local",
          "hint": "@sign",
          "title": "Small Sign",
+         "size": [
+            3,
+            1
+         ],
          "karma": -2,
          "use": {
             "sign": true,
@@ -8291,9 +8562,15 @@
          }
       },
       "signs/large": {
+         "category": "sign",
+         "layer": "front",
          "meta": "local",
          "hint": "@sign",
          "title": "Large Sign",
+         "size": [
+            3,
+            2
+         ],
          "karma": -4,
          "use": {
             "sign": true,
@@ -8334,9 +8611,15 @@
          }
       },
       "signs/wood-small": {
+         "category": "sign",
+         "layer": "front",
          "meta": "local",
          "hint": "@sign",
          "title": "Small Wood Sign",
+         "size": [
+            3,
+            1
+         ],
          "karma": -2,
          "use": {
             "sign": true,
@@ -8377,9 +8660,15 @@
          ]
       },
       "signs/iron-small": {
+         "category": "sign",
+         "layer": "front",
          "meta": "local",
          "hint": "@sign",
          "title": "Small Iron Sign",
+         "size": [
+            3,
+            1
+         ],
          "karma": -2,
          "use": {
             "sign": true,
@@ -8425,9 +8714,15 @@
          ]
       },
       "signs/copper-small": {
+         "category": "sign",
+         "layer": "front",
          "meta": "local",
          "hint": "@sign",
          "title": "Small Copper Sign",
+         "size": [
+            3,
+            1
+         ],
          "karma": -2,
          "use": {
             "sign": true,
@@ -8473,9 +8768,15 @@
          ]
       },
       "signs/brass-small": {
+         "category": "sign",
+         "layer": "front",
          "meta": "local",
          "hint": "@sign",
          "title": "Small Brass Sign",
+         "size": [
+            3,
+            1
+         ],
          "karma": -2,
          "use": {
             "sign": true,
@@ -8521,9 +8822,15 @@
          ]
       },
       "signs/wood-large": {
+         "category": "sign",
+         "layer": "front",
          "meta": "local",
          "hint": "@sign",
          "title": "Large Wood Sign",
+         "size": [
+            3,
+            2
+         ],
          "karma": -4,
          "use": {
             "sign": true,
@@ -8587,9 +8894,15 @@
          ]
       },
       "signs/iron-large": {
+         "category": "sign",
+         "layer": "front",
          "meta": "local",
          "hint": "@sign",
          "title": "Large Iron Sign",
+         "size": [
+            3,
+            2
+         ],
          "karma": -4,
          "use": {
             "sign": true,
@@ -8654,9 +8967,15 @@
          ]
       },
       "signs/copper-large": {
+         "category": "sign",
+         "layer": "front",
          "meta": "local",
          "hint": "@sign",
          "title": "Large Copper Sign",
+         "size": [
+            3,
+            2
+         ],
          "karma": -4,
          "use": {
             "sign": true,
@@ -8721,9 +9040,15 @@
          ]
       },
       "signs/brass-large": {
+         "category": "sign",
+         "layer": "front",
          "meta": "local",
          "hint": "@sign",
          "title": "Large Brass Sign",
+         "size": [
+            3,
+            2
+         ],
          "karma": -4,
          "use": {
             "sign": true,
@@ -8788,6 +9113,8 @@
          ]
       },
       "signs/plaque-base": {
+         "category": "signs",
+         "layer": "front",
          "meta": "global",
          "spacing": 50,
          "spacing_items": [
@@ -8837,6 +9164,8 @@
          ]
       },
       "signs/plaque": {
+         "category": "signs",
+         "layer": "front",
          "meta": "global",
          "spacing": 50,
          "spacing_items": [
@@ -8915,6 +9244,8 @@
          ]
       },
       "signs/plaque-landmark": {
+         "category": "signs",
+         "layer": "front",
          "meta": "global",
          "spacing": 50,
          "spacing_items": [
@@ -9008,6 +9339,8 @@
          ]
       },
       "signs/plaque-ruby": {
+         "category": "signs",
+         "layer": "front",
          "meta": "global",
          "spacing": 50,
          "spacing_items": [
@@ -9901,6 +10234,10 @@
       },
       "rubble/skeleton": {
          "code": 970,
+         "size": [
+            2,
+            1
+         ],
          "group": "remains",
          "craftable": false,
          "sprite": [
@@ -10095,10 +10432,12 @@
          "char": "✺"
       },
       "vegetation": {
+         "layer": "front",
          "inventory": "ground/flax",
          "material": "shrubbery"
       },
       "vegetation/shrub-dead": {
+         "layer": "front",
          "inventory": "ground/flax",
          "material": "shrubbery",
          "code": 710,
@@ -10112,6 +10451,7 @@
          "char": "⠤"
       },
       "vegetation/grass": {
+         "layer": "front",
          "inventory": "ground/flax",
          "material": "shrubbery",
          "code": 711,
@@ -10119,6 +10459,7 @@
          "placeover": true
       },
       "vegetation/arctic-growth": {
+         "layer": "front",
          "inventory": "ground/flax",
          "material": "shrubbery",
          "code": 499,
@@ -10128,6 +10469,7 @@
          "gui": false
       },
       "vegetation/shrub": {
+         "layer": "front",
          "inventory": "ground/flax",
          "material": "shrubbery",
          "mod": "sprite",
@@ -10138,6 +10480,7 @@
          "group": "shrub"
       },
       "vegetation/shrub-a": {
+         "layer": "front",
          "inventory": "ground/flax",
          "material": "shrubbery",
          "mod": "sprite",
@@ -10173,6 +10516,7 @@
          ]
       },
       "vegetation/shrub-b": {
+         "layer": "front",
          "inventory": "ground/flax",
          "material": "shrubbery",
          "mod": "sprite",
@@ -10208,6 +10552,7 @@
          ]
       },
       "vegetation/shrub-c": {
+         "layer": "front",
          "inventory": "ground/flax",
          "material": "shrubbery",
          "mod": "sprite",
@@ -10243,6 +10588,7 @@
          ]
       },
       "vegetation/shrub-d": {
+         "layer": "front",
          "inventory": "ground/flax",
          "material": "shrubbery",
          "mod": "sprite",
@@ -10278,6 +10624,7 @@
          ]
       },
       "vegetation/shrub-e": {
+         "layer": "front",
          "inventory": "ground/flax",
          "material": "shrubbery",
          "mod": "sprite",
@@ -10313,6 +10660,7 @@
          ]
       },
       "vegetation/shrub-f": {
+         "layer": "front",
          "inventory": "ground/flax",
          "material": "shrubbery",
          "mod": "sprite",
@@ -10348,6 +10696,7 @@
          ]
       },
       "vegetation/shrub-g": {
+         "layer": "front",
          "inventory": "ground/flax",
          "material": "shrubbery",
          "mod": "sprite",
@@ -10523,6 +10872,7 @@
          "color": "523b23",
          "tileable": true,
          "mod": "tiling",
+         "layer": "front",
          "inventory": "building/wood",
          "material": "wood",
          "group": "tree",
@@ -10536,6 +10886,7 @@
          ]
       },
       "vegetation/tree-dead-roots": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -10558,6 +10909,7 @@
          "title": "Dead Tree Roots"
       },
       "vegetation/tree-dead-roots-1": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -10590,6 +10942,7 @@
          ]
       },
       "vegetation/tree-dead-roots-2": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -10625,6 +10978,7 @@
          "inventory": "building/wood",
          "material": "wood",
          "group": "tree",
+         "layer": "front",
          "carryable": false,
          "title": "Dead Tree",
          "sprite": [
@@ -10636,6 +10990,7 @@
          "inventory": "building/wood",
          "material": "wood",
          "group": "tree",
+         "layer": "front",
          "carryable": false,
          "title": "Dead Tree",
          "sprite": [
@@ -10648,6 +11003,7 @@
          "inventory": "building/wood",
          "material": "wood",
          "group": "tree",
+         "layer": "front",
          "carryable": false,
          "title": "Dead Tree",
          "sprite": [
@@ -10661,7 +11017,8 @@
          "title": "Mushroom",
          "karma": -2,
          "report": true,
-         "group": "fungi"
+         "group": "fungi",
+         "layer": "front"
       },
       "vegetation/mushroom-amanita": {
          "material": "soft",
@@ -10669,6 +11026,7 @@
          "karma": -2,
          "report": true,
          "group": "fungi",
+         "layer": "front",
          "sprite": "vegetation/mushroom-fat-1-cap",
          "code": 730
       },
@@ -10678,6 +11036,7 @@
          "karma": -2,
          "report": true,
          "group": "fungi",
+         "layer": "front",
          "sprite": "vegetation/mushroom-fat-1-stalk",
          "code": 731,
          "inventory": "vegetation/mushroom-amanita",
@@ -10689,6 +11048,7 @@
          "karma": -2,
          "report": true,
          "group": "fungi",
+         "layer": "front",
          "sprite": "vegetation/mushroom-skinny-1-cap",
          "code": 735
       },
@@ -10698,6 +11058,7 @@
          "karma": -2,
          "report": true,
          "group": "fungi",
+         "layer": "front",
          "sprite": "vegetation/mushroom-skinny-1-stalk",
          "code": 736,
          "inventory": "vegetation/mushroom-willow",
@@ -10709,6 +11070,7 @@
          "karma": -2,
          "report": true,
          "group": "fungi",
+         "layer": "front",
          "code": 740,
          "sprite": [
             "vegetation/mushrooms-tiny",
@@ -10721,6 +11083,7 @@
          "karma": -2,
          "report": true,
          "group": "fungi",
+         "layer": "front",
          "code": 741,
          "sprite": [
             "vegetation/mushroom-acid",
@@ -10735,6 +11098,7 @@
          "karma": -3,
          "report": true,
          "group": "fungi",
+         "layer": "front",
          "code": 742,
          "light": 3,
          "light_color": "86df46"
@@ -10745,6 +11109,7 @@
          "karma": -3,
          "report": true,
          "group": "fungi",
+         "layer": "front",
          "code": 743,
          "sprite": [
             "vegetation/mushroom-anbaric",
@@ -10759,6 +11124,7 @@
          "karma": -10,
          "report": true,
          "group": "fungi",
+         "layer": "front",
          "code": 487,
          "light": 2,
          "light_color": "f1f181"
@@ -10769,6 +11135,7 @@
          "karma": -2,
          "report": true,
          "group": "fungi",
+         "layer": "front",
          "code": 744,
          "sprite": [
             "vegetation/mushroom-morel",
@@ -10781,6 +11148,7 @@
          "karma": -5,
          "report": true,
          "group": "fungi",
+         "layer": "front",
          "code": 449
       },
       "vegetation/mushroom-oyster": {
@@ -10789,6 +11157,7 @@
          "karma": -2,
          "report": true,
          "group": "fungi",
+         "layer": "front",
          "code": 745,
          "sprite": [
             "vegetation/mushroom-oyster",
@@ -10801,6 +11170,7 @@
          "karma": -2,
          "report": true,
          "group": "fungi",
+         "layer": "front",
          "code": 746,
          "sprite": [
             "vegetation/mushroom-portabella",
@@ -10813,6 +11183,7 @@
          "karma": -2,
          "report": true,
          "group": "fungi",
+         "layer": "front",
          "code": 747,
          "sprite": [
             "vegetation/mushroom-porcini",
@@ -10825,6 +11196,7 @@
          "karma": -2,
          "report": true,
          "group": "fungi",
+         "layer": "front",
          "code": 748,
          "sprite": [
             "vegetation/mushroom-chanterelle",
@@ -10837,6 +11209,7 @@
          "karma": -3,
          "report": true,
          "group": "fungi",
+         "layer": "front",
          "code": 749,
          "sprite": [
             "vegetation/mushroom-hell",
@@ -10849,6 +11222,7 @@
          "karma": -10,
          "report": true,
          "group": "fungi",
+         "layer": "front",
          "code": 448
       },
       "vegetation/mushroom-lava": {
@@ -10857,6 +11231,7 @@
          "karma": -3,
          "report": true,
          "group": "fungi",
+         "layer": "front",
          "code": 750,
          "sprite": [
             "vegetation/mushroom-lava",
@@ -10871,6 +11246,7 @@
          "karma": -10,
          "report": true,
          "group": "fungi",
+         "layer": "front",
          "code": 447,
          "light": 2,
          "light_color": "f14121"
@@ -10881,6 +11257,7 @@
          "karma": -3,
          "report": true,
          "group": "fungi",
+         "layer": "front",
          "code": 751,
          "sprite": [
             "vegetation/mushroom-arctic",
@@ -10893,6 +11270,7 @@
          "karma": -10,
          "report": true,
          "group": "fungi",
+         "layer": "front",
          "code": 446
       },
       "vegetation/mushroom-apostate": {
@@ -10901,6 +11279,7 @@
          "karma": -3,
          "report": true,
          "group": "fungi",
+         "layer": "front",
          "code": 1167,
          "sprite": [
             "vegetation/mushroom-apostate",
@@ -10926,6 +11305,7 @@
          "karma": -10,
          "report": true,
          "group": "fungi",
+         "layer": "front",
          "code": 445,
          "use": {
             "command": true,
@@ -10947,6 +11327,7 @@
          "karma": -3,
          "report": true,
          "group": "fungi",
+         "layer": "front",
          "code": 1168,
          "sprite": [
             "vegetation/mushroom-devils-cigar",
@@ -10959,6 +11340,7 @@
          "karma": -3,
          "report": true,
          "group": "fungi",
+         "layer": "front",
          "code": 1169,
          "sprite": [
             "vegetation/mushroom-grey",
@@ -12191,6 +12573,10 @@
       },
       "lighting/candlelabra": {
          "code": 1104,
+         "size": [
+            2,
+            1
+         ],
          "color": "eeeedd",
          "material": "metal",
          "background": "lighting/candlelabra",
@@ -12221,6 +12607,10 @@
       },
       "lighting/chandelier": {
          "code": 1008,
+         "size": [
+            2,
+            2
+         ],
          "color": "eeeedd",
          "material": "metal",
          "background": "lighting/chandelier",
@@ -12489,6 +12879,10 @@
       },
       "furniture/bookshelf-tall": {
          "code": 770,
+         "size": [
+            2,
+            4
+         ],
          "material": "wood",
          "title": "Bookshelf",
          "background": "furniture/bookshelf-tall",
@@ -12505,6 +12899,10 @@
       },
       "furniture/bookshelf-tall-full": {
          "code": 771,
+         "size": [
+            2,
+            4
+         ],
          "material": "wood",
          "craftable": false,
          "title": "Bookshelf",
@@ -12516,6 +12914,10 @@
       },
       "furniture/chair-plush": {
          "code": 772,
+         "size": [
+            2,
+            2
+         ],
          "material": "soft",
          "title": "Plush Chair",
          "ingredients": [
@@ -12775,6 +13177,10 @@
       },
       "furniture/table": {
          "code": 774,
+         "size": [
+            2,
+            1
+         ],
          "material": "wood",
          "ingredients": [
             [
@@ -12785,6 +13191,10 @@
       },
       "furniture/wardrobe": {
          "code": 775,
+         "size": [
+            2,
+            3
+         ],
          "material": "wood",
          "ingredients": [
             [
@@ -12842,6 +13252,7 @@
          "emitter": "market sparkles",
          "karma": -20,
          "title": "Market Converter",
+         "sprite_color": "ffff64",
          "use": {
             "market": true,
             "command": true
@@ -12949,6 +13360,10 @@
       },
       "furniture/mirror-wall": {
          "code": 773,
+         "size": [
+            2,
+            2
+         ],
          "material": "metal",
          "ingredients": [
             "building/wood-decorative",
@@ -12969,6 +13384,10 @@
          "mod": "rotation",
          "rotation": "mirror",
          "code": 791,
+         "size": [
+            3,
+            1
+         ],
          "material": "wood",
          "ingredients": [
             [
@@ -12994,6 +13413,10 @@
          "mod": "rotation",
          "rotation": "mirror",
          "code": 792,
+         "size": [
+            3,
+            2
+         ],
          "material": "wood",
          "background": "furniture/bed",
          "sprite": "furniture/bed-curtains",
@@ -13184,6 +13607,10 @@
          "timer_delay": 60,
          "karma": -2,
          "code": 795,
+         "size": [
+            2,
+            2
+         ],
          "material": "wood",
          "ingredients": [
             [
@@ -13324,12 +13751,16 @@
          ]
       },
       "furniture/art": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -12,
          "report": true
       },
       "furniture/mounted-art": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -12,
@@ -13337,60 +13768,98 @@
          "mounted": true
       },
       "furniture/head-deer": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -12,
          "report": true,
          "mounted": true,
          "code": 780,
+         "size": [
+            2,
+            2
+         ],
          "title": "Deer Head"
       },
       "furniture/head-bear": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -12,
          "report": true,
          "mounted": true,
          "code": 781,
+         "size": [
+            2,
+            2
+         ],
          "title": "Bear Head"
       },
       "furniture/head-cthulhu": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -12,
          "report": true,
          "mounted": true,
          "code": 782,
+         "size": [
+            2,
+            2
+         ],
          "title": "Cthulhu Head"
       },
       "furniture/head-fish": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -12,
          "report": true,
          "mounted": true,
          "code": 392,
+         "size": [
+            2,
+            1
+         ],
          "title": "Mounted Fish"
       },
       "furniture/head-tiger": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -12,
          "report": true,
          "mounted": true,
          "code": 393,
+         "size": [
+            2,
+            2
+         ],
          "title": "Tiger Head"
       },
       "furniture/head-jackalope": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -12,
          "report": true,
          "mounted": true,
          "code": 394,
+         "size": [
+            2,
+            2
+         ],
          "title": "Jackalope Head"
       },
       "furniture/head-predator": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -12,
@@ -13400,24 +13869,38 @@
          "title": "Hunter Head"
       },
       "furniture/head-zebra": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -12,
          "report": true,
          "mounted": true,
          "code": 396,
+         "size": [
+            2,
+            2
+         ],
          "title": "Zebra Head"
       },
       "furniture/head-mammoth": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -12,
          "report": true,
          "mounted": true,
          "code": 217,
+         "size": [
+            2,
+            2
+         ],
          "title": "Mammoth Head"
       },
       "furniture/pinned-bee": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -12,
@@ -13426,6 +13909,8 @@
          "code": 384
       },
       "furniture/pinned-beetle": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -12,
@@ -13434,6 +13919,8 @@
          "code": 385
       },
       "furniture/pinned-cockroach": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -12,
@@ -13442,6 +13929,8 @@
          "code": 386
       },
       "furniture/pinned-dragonfly": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -12,
@@ -13450,6 +13939,8 @@
          "code": 387
       },
       "furniture/pinned-millipede": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -12,
@@ -13458,6 +13949,8 @@
          "code": 388
       },
       "furniture/pinned-preying-mantis": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -12,
@@ -13467,6 +13960,8 @@
          "title": "Praying Mantis"
       },
       "furniture/pinned-scorpion": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -12,
@@ -13475,6 +13970,8 @@
          "code": 390
       },
       "furniture/pinned-tarantula": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -12,
@@ -13553,6 +14050,8 @@
          "title": "Rumanzovia Butterfly"
       },
       "furniture/map": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -12,
@@ -13561,10 +14060,16 @@
          "mounted": true
       },
       "furniture/painting": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -15,
          "report": true,
+         "size": [
+            2,
+            2
+         ],
          "mounted": true,
          "special placement": "framed",
          "sprites": [
@@ -13590,10 +14095,16 @@
          ]
       },
       "furniture/painting-landscape": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -15,
          "report": true,
+         "size": [
+            2,
+            2
+         ],
          "mounted": true,
          "special placement": "framed",
          "sprites": [
@@ -13649,10 +14160,16 @@
          "title": "Landscape"
       },
       "furniture/painting-une-pipe": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -15,
          "report": true,
+         "size": [
+            2,
+            2
+         ],
          "mounted": true,
          "special placement": "framed",
          "sprites": [
@@ -13686,10 +14203,16 @@
          ]
       },
       "furniture/painting-digdug": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -15,
          "report": true,
+         "size": [
+            2,
+            2
+         ],
          "mounted": true,
          "special placement": "framed",
          "sprites": [
@@ -13723,10 +14246,16 @@
          ]
       },
       "furniture/painting-notch": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -15,
          "report": true,
+         "size": [
+            2,
+            2
+         ],
          "mounted": true,
          "special placement": "framed",
          "sprites": [
@@ -13760,10 +14289,16 @@
          ]
       },
       "furniture/painting-smasheroid": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -15,
          "report": true,
+         "size": [
+            2,
+            2
+         ],
          "mounted": true,
          "special placement": "framed",
          "sprites": [
@@ -13797,10 +14332,16 @@
          ]
       },
       "furniture/painting-surfer": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -15,
          "report": true,
+         "size": [
+            2,
+            2
+         ],
          "mounted": true,
          "special placement": "framed",
          "sprites": [
@@ -13834,10 +14375,16 @@
          ]
       },
       "furniture/painting-alpaca": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -15,
          "report": true,
+         "size": [
+            2,
+            2
+         ],
          "mounted": true,
          "special placement": "framed",
          "sprites": [
@@ -13871,10 +14418,16 @@
          ]
       },
       "furniture/painting-son-of-man": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -15,
          "report": true,
+         "size": [
+            2,
+            2
+         ],
          "mounted": true,
          "special placement": "framed",
          "sprites": [
@@ -13908,10 +14461,16 @@
          ]
       },
       "furniture/painting-outling": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -15,
          "report": true,
+         "size": [
+            2,
+            2
+         ],
          "mounted": true,
          "special placement": "framed",
          "sprites": [
@@ -13945,10 +14504,16 @@
          ]
       },
       "furniture/painting-northerners": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -15,
          "report": true,
+         "size": [
+            2,
+            2
+         ],
          "mounted": true,
          "special placement": "framed",
          "sprites": [
@@ -13982,10 +14547,16 @@
          ]
       },
       "furniture/painting-leapquest": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -15,
          "report": true,
+         "size": [
+            2,
+            2
+         ],
          "mounted": true,
          "special placement": "framed",
          "sprites": [
@@ -14019,10 +14590,16 @@
          ]
       },
       "furniture/painting-gashlycrumb": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -15,
          "report": true,
+         "size": [
+            2,
+            2
+         ],
          "mounted": true,
          "special placement": "framed",
          "sprites": [
@@ -14056,10 +14633,16 @@
          ]
       },
       "furniture/painting-autumn": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -15,
          "report": true,
+         "size": [
+            2,
+            2
+         ],
          "mounted": true,
          "special placement": "framed",
          "sprites": [
@@ -14093,10 +14676,16 @@
          ]
       },
       "furniture/painting-mayflower": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -15,
          "report": true,
+         "size": [
+            2,
+            2
+         ],
          "mounted": true,
          "special placement": "framed",
          "sprites": [
@@ -14130,6 +14719,8 @@
          ]
       },
       "furniture/marionette": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -12,
@@ -14138,6 +14729,8 @@
          "title": "Marionette"
       },
       "furniture/ship-in-bottle": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -12,
@@ -14146,46 +14739,78 @@
          "title": "Ship in a Bottle"
       },
       "furniture/airship-in-bottle": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -12,
          "report": true,
          "code": 693,
+         "size": [
+            2,
+            2
+         ],
          "title": "Airship in a Bottle"
       },
       "furniture/globe": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -12,
          "report": true,
          "code": 686,
+         "size": [
+            2,
+            2
+         ],
          "rarity": 4
       },
       "furniture/moon": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -12,
          "report": true,
          "code": 62,
+         "size": [
+            2,
+            2
+         ],
          "rarity": 5
       },
       "furniture/mars": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -12,
          "report": true,
          "code": 63,
+         "size": [
+            2,
+            2
+         ],
          "rarity": 5
       },
       "furniture/solar-system-diorama": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -12,
          "report": true,
          "code": 99,
+         "size": [
+            2,
+            2
+         ],
          "rarity": 5
       },
       "furniture/easel": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -12,
@@ -14193,6 +14818,8 @@
          "code": 687
       },
       "furniture/easel-tall": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -12,
@@ -14201,6 +14828,8 @@
          "title": "Tall Easel"
       },
       "furniture/stuffed-bear": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -12,
@@ -14209,6 +14838,8 @@
          "rarity": 2
       },
       "furniture/stuffed-cthulhu": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -12,
@@ -14217,6 +14848,8 @@
          "rarity": 4
       },
       "furniture/stuffed-terrapus": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -12,
@@ -14225,6 +14858,8 @@
          "rarity": 3
       },
       "furniture/stuffed-android": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -12,
@@ -14233,6 +14868,8 @@
          "rarity": 3
       },
       "furniture/stuffed-snowman": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -12,
@@ -14241,6 +14878,8 @@
          "rarity": 3
       },
       "furniture/stuffed-brain": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -12,
@@ -14249,6 +14888,8 @@
          "rarity": 5
       },
       "furniture/stuffed-crow": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -12,
@@ -14257,6 +14898,8 @@
          "rarity": 2
       },
       "furniture/stuffed-panda": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -12,
@@ -14265,6 +14908,8 @@
          "rarity": 4
       },
       "furniture/stuffed-squid": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -12,
@@ -14284,6 +14929,8 @@
          ]
       },
       "furniture/daguerreotype-small": {
+         "category": "furniture",
+         "layer": "front",
          "material": "metal",
          "craftable": false,
          "karma": -12,
@@ -14309,6 +14956,8 @@
          ]
       },
       "furniture/daguerreotype-large": {
+         "category": "furniture",
+         "layer": "front",
          "material": "metal",
          "craftable": false,
          "karma": -12,
@@ -14334,6 +14983,7 @@
       },
       "containers/full-mod": {
          "mod": "change",
+         "loot_graphic": "loot",
          "change": [
             {
                "inherit": true,
@@ -14475,6 +15125,7 @@
       },
       "containers/chest": {
          "mod": "change",
+         "loot_graphic": "loot_red",
          "change": [
             {
                "inherit": true,
@@ -14508,7 +15159,6 @@
             "wardrobe",
             "armaments"
          ],
-         "loot_graphic": "loot_red",
          "loot_xp": 25,
          "karma": -2,
          "report": true,
@@ -14516,6 +15166,7 @@
       },
       "containers/chest-large": {
          "mod": "change",
+         "loot_graphic": "loot_red",
          "change": [
             {
                "inherit": true,
@@ -14560,7 +15211,6 @@
             "wardrobe",
             "armaments"
          ],
-         "loot_graphic": "loot_red",
          "loot_xp": 25,
          "karma": -2,
          "report": true,
@@ -14726,6 +15376,7 @@
       },
       "containers/chest-industrial": {
          "mod": "change",
+         "loot_graphic": "loot",
          "change": [
             {
                "inherit": true,
@@ -14761,6 +15412,7 @@
       },
       "containers/chest-mechanical": {
          "mod": "change",
+         "loot_graphic": "loot_mech",
          "change": [
             {
                "inherit": true,
@@ -14788,7 +15440,6 @@
             "treasure",
             "armaments+"
          ],
-         "loot_graphic": "loot_mech",
          "loot_xp": 25,
          "crafting skill": [
             "engineering",
@@ -14800,6 +15451,7 @@
       },
       "containers/chest-mechanical-large": {
          "mod": "change",
+         "loot_graphic": "loot_mech",
          "change": [
             {
                "inherit": true,
@@ -14819,6 +15471,10 @@
             "sound": "door_unlock01"
          },
          "code": 824,
+         "size": [
+            2,
+            1
+         ],
          "material": "metal",
          "title": "Large Mechanical Chest",
          "meta": "hidden",
@@ -14827,7 +15483,6 @@
             "treasure+",
             "armaments+"
          ],
-         "loot_graphic": "loot_mech",
          "loot_xp": 25,
          "crafting skill": [
             "engineering",
@@ -14839,6 +15494,7 @@
       },
       "containers/barrel": {
          "mod": "change",
+         "loot_graphic": "loot",
          "change": [
             {
                "inherit": true,
@@ -14900,6 +15556,7 @@
       },
       "containers/barrel-tall": {
          "mod": "change",
+         "loot_graphic": "loot",
          "change": [
             {
                "inherit": true,
@@ -14940,6 +15597,7 @@
       },
       "containers/sack": {
          "mod": "change",
+         "loot_graphic": "loot",
          "change": [
             {
                "inherit": true,
@@ -14965,6 +15623,7 @@
       },
       "containers/sack-small": {
          "mod": "change",
+         "loot_graphic": "loot",
          "change": [
             {
                "inherit": true,
@@ -15009,6 +15668,7 @@
       },
       "containers/sack-large": {
          "mod": "change",
+         "loot_graphic": "loot",
          "change": [
             {
                "inherit": true,
@@ -15032,6 +15692,10 @@
          "loot_xp": 10,
          "group": "sack",
          "code": 812,
+         "size": [
+            2,
+            2
+         ],
          "ingredients": [
             [
                "ground/flax",
@@ -15059,6 +15723,7 @@
       },
       "containers/crate": {
          "mod": "change",
+         "loot_graphic": "loot",
          "change": [
             {
                "inherit": true,
@@ -15083,6 +15748,7 @@
       },
       "containers/crate-small": {
          "mod": "change",
+         "loot_graphic": "loot",
          "change": [
             {
                "inherit": true,
@@ -15126,6 +15792,7 @@
       },
       "containers/crate-large": {
          "mod": "change",
+         "loot_graphic": "loot",
          "change": [
             {
                "inherit": true,
@@ -15148,6 +15815,10 @@
          "loot": "resources",
          "loot_xp": 10,
          "code": 814,
+         "size": [
+            2,
+            2
+         ],
          "ingredients": [
             [
                "building/wood",
@@ -15176,6 +15847,7 @@
       },
       "containers/crate-industrial": {
          "mod": "change",
+         "loot_graphic": "loot",
          "change": [
             {
                "inherit": true,
@@ -15203,6 +15875,7 @@
       },
       "containers/crate-industrial-small": {
          "mod": "change",
+         "loot_graphic": "loot",
          "change": [
             {
                "inherit": true,
@@ -15241,6 +15914,7 @@
       },
       "containers/crate-industrial-large": {
          "mod": "change",
+         "loot_graphic": "loot",
          "change": [
             {
                "inherit": true,
@@ -15266,6 +15940,10 @@
          ],
          "loot_xp": 10,
          "code": 817,
+         "size": [
+            2,
+            2
+         ],
          "ingredients": [
             [
                "building/iron",
@@ -15675,12 +16353,14 @@
          "rarity": 3
       },
       "music": {
+         "layer": "front",
          "material": "wood",
          "emitter": "music",
          "karma": -3,
          "report": true
       },
       "music/phonograph": {
+         "layer": "front",
          "material": "wood",
          "emitter": "music",
          "karma": -3,
@@ -15707,6 +16387,7 @@
          ]
       },
       "music/symphonium": {
+         "layer": "front",
          "material": "wood",
          "emitter": "music",
          "karma": -3,
@@ -15719,6 +16400,7 @@
          ],
          "use": {
             "change": {
+               "layer": "front",
                "material": "wood",
                "emitter": "",
                "karma": -3,
@@ -15741,6 +16423,7 @@
          ]
       },
       "music/piano": {
+         "layer": "front",
          "material": "wood",
          "emitter": "music",
          "karma": -3,
@@ -15763,6 +16446,7 @@
          ]
       },
       "music/bass-drum": {
+         "layer": "front",
          "material": "wood",
          "emitter": "music",
          "karma": -3,
@@ -15770,6 +16454,7 @@
          "code": 249
       },
       "music/gong": {
+         "layer": "front",
          "material": "wood",
          "emitter": "music",
          "karma": -3,
@@ -15777,6 +16462,7 @@
          "code": 250
       },
       "music/harp": {
+         "layer": "front",
          "material": "wood",
          "emitter": "music",
          "karma": -3,
@@ -15784,6 +16470,7 @@
          "code": 251
       },
       "music/snare-drum": {
+         "layer": "front",
          "material": "wood",
          "emitter": "music",
          "karma": -3,
@@ -15791,6 +16478,7 @@
          "code": 252
       },
       "music/synthesizer": {
+         "layer": "front",
          "material": "wood",
          "emitter": "music",
          "karma": -3,
@@ -15798,6 +16486,8 @@
          "code": 253
       },
       "mechanical": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -3
@@ -15964,6 +16654,10 @@
          "material": "metal",
          "shape": "polygonal",
          "shape_definition": "mechanical/trapdoor-large",
+         "size": [
+            2,
+            1
+         ],
          "solid": true,
          "sprite": "mechanical/trapdoor-large-closed",
          "hint": "@mechanical-door",
@@ -16302,6 +16996,10 @@
       },
       "mechanical/switch-large": {
          "code": 939,
+         "size": [
+            2,
+            2
+         ],
          "material": "metal",
          "sprite": "mechanical/switch-large-off",
          "hint": "@mechanical-switch",
@@ -16413,6 +17111,10 @@
       },
       "mechanical/switch-large-timed": {
          "code": 996,
+         "size": [
+            2,
+            2
+         ],
          "material": "metal",
          "background": "mechanical/switch-large-off",
          "sprite": "mechanical/swtich-large-timer-off",
@@ -16500,6 +17202,10 @@
       },
       "mechanical/switch-large-fancy": {
          "code": 948,
+         "size": [
+            2,
+            2
+         ],
          "material": "metal",
          "sprite": "mechanical/switch-large-fancy-off",
          "meta": "hidden",
@@ -17226,6 +17932,8 @@
          "title": "Energy Turret Trap"
       },
       "mechanical/typewriter": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -12,
@@ -17233,6 +17941,8 @@
          "code": 997
       },
       "steam-powered": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -5,
@@ -17241,11 +17951,17 @@
          "steam": true
       },
       "mechanical/collector": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -3,
          "meta": "hidden",
          "code": 853,
+         "size": [
+            3,
+            3
+         ],
          "group": "collector",
          "placing skill": [
             "engineering",
@@ -17279,6 +17995,8 @@
          ]
       },
       "mechanical/tesla-coil": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -5,
@@ -17326,6 +18044,8 @@
          ]
       },
       "mechanical/suppressor": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -5,
@@ -17381,6 +18101,8 @@
          ]
       },
       "mechanical/replenisher": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -5,
@@ -17391,6 +18113,8 @@
          "code": 962
       },
       "mechanical/inhibitor": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -10,
@@ -17416,6 +18140,8 @@
          "inventory_frame": "inventory/mechanical/stabilizer"
       },
       "mechanical/wine-press": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -5,
@@ -17461,6 +18187,8 @@
          ]
       },
       "mechanical/engine": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -5,
@@ -17468,6 +18196,10 @@
          "group": "steam",
          "steam": true,
          "code": 851,
+         "size": [
+            4,
+            2
+         ],
          "ingredients": [
             [
                "building/brass",
@@ -17501,6 +18233,8 @@
          ]
       },
       "mechanical/furnace": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -5,
@@ -17540,6 +18274,8 @@
          ]
       },
       "mechanical/forge": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -5,
@@ -17547,6 +18283,10 @@
          "group": "steam",
          "steam": true,
          "code": 852,
+         "size": [
+            3,
+            3
+         ],
          "mod": "change",
          "ingredients": [
             [
@@ -17581,6 +18321,8 @@
          ]
       },
       "mechanical/exploder": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -5,
@@ -17639,6 +18381,8 @@
          ]
       },
       "mechanical/mill": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -5,
@@ -17681,6 +18425,8 @@
          ]
       },
       "mechanical/lathe": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -5,
@@ -17725,6 +18471,8 @@
          ]
       },
       "mechanical/loom": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -5,
@@ -17751,6 +18499,8 @@
          ]
       },
       "mechanical/magnet-large": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -5,
@@ -17794,6 +18544,8 @@
          ]
       },
       "mechanical/bomb-suppressor": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -5,
@@ -17840,6 +18592,8 @@
          ]
       },
       "mechanical/thinking-cap": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -3,
@@ -17851,7 +18605,8 @@
          },
          "invulnerable": true,
          "gui": false,
-         "title": "Programmer"
+         "title": "Programmer",
+         "inventory_frame": "mechanical/thinking-cap"
       },
       "mechanical/telescope": {
          "code": 103,
@@ -17915,6 +18670,8 @@
          ]
       },
       "dish": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -3,
@@ -17942,6 +18699,8 @@
          }
       },
       "mechanical/dish-micro": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -4,
@@ -18024,6 +18783,8 @@
          ]
       },
       "mechanical/dish": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -10,
@@ -18110,6 +18871,8 @@
          ]
       },
       "mechanical/dish-large": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -15,
@@ -18196,6 +18959,8 @@
          ]
       },
       "mechanical/dish-mega": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -20,
@@ -18282,6 +19047,8 @@
          ]
       },
       "mechanical/dish-giga": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -25,
@@ -18372,6 +19139,8 @@
          ]
       },
       "mechanical/dish-broken": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -3,
@@ -18393,6 +19162,8 @@
          "xp": 5
       },
       "mechanical/dish-competition": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -10,
@@ -18422,6 +19193,8 @@
          }
       },
       "mechanical/dish-competition-20": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -10,
@@ -18453,6 +19226,8 @@
          "field": 20
       },
       "mechanical/dish-competition-25": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -10,
@@ -18484,6 +19259,8 @@
          "field": 25
       },
       "mechanical/dish-competition-5": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -10,
@@ -18515,6 +19292,8 @@
          "field": 5
       },
       "mechanical/template-capturer": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -3,
@@ -18668,6 +19447,8 @@
          }
       },
       "mechanical/template-planner": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -3,
@@ -18716,6 +19497,8 @@
          }
       },
       "mechanical/template-fabricator": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -3,
@@ -18755,6 +19538,8 @@
          }
       },
       "mechanical/trap-electric": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -2,
@@ -18771,6 +19556,8 @@
          "title": "Electric Trap"
       },
       "enemy-protector": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -5,
@@ -18791,6 +19578,8 @@
          }
       },
       "mechanical/protector-enemy": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -5,
@@ -18822,6 +19611,8 @@
          "xp": 5
       },
       "mechanical/protector-enemy-fancy": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -5,
@@ -18852,6 +19643,8 @@
          "xp": 10
       },
       "mechanical/protector-enemy-epic": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -5,
@@ -18896,6 +19689,8 @@
          "title": "Evoker"
       },
       "mechanical/spawner-admin": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -10,
@@ -18911,6 +19706,7 @@
          "meta": "hidden",
          "spawner": true,
          "title": "Admin Spawner",
+         "sprite_color": "9696ff",
          "gui": false,
          "use": {
             "create dialog": {
@@ -18948,6 +19744,8 @@
          }
       },
       "mechanical/spawner-base": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -3,
@@ -18961,6 +19759,8 @@
          }
       },
       "mechanical/spawner": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -10,
@@ -19043,6 +19843,8 @@
          ]
       },
       "mechanical/spawner-small": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -7,
@@ -19755,6 +20557,7 @@
          "karma": -3
       },
       "mechanical/trap-mine-buried": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -20337,6 +21140,7 @@
       "back/chromatic": {
          "chromatic": true,
          "wiki": false,
+         "layer": "back",
          "level": 1,
          "tileable": true,
          "opaque": true,
@@ -20357,6 +21161,7 @@
       "chromatic/block": {
          "chromatic": true,
          "wiki": false,
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -20374,6 +21179,7 @@
       "chromatic/block-reinforced": {
          "chromatic": true,
          "wiki": false,
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -20471,6 +21277,7 @@
       },
       "mechanical/ecological": {
          "material": "metal",
+         "layer": "front",
          "craftable": false,
          "invulnerable": true,
          "group": "ecology",
@@ -20478,6 +21285,7 @@
       },
       "mechanical/geck": {
          "material": "metal",
+         "layer": "front",
          "craftable": false,
          "invulnerable": true,
          "group": "ecology",
@@ -20496,6 +21304,7 @@
       },
       "mechanical/geck-tub": {
          "material": "metal",
+         "layer": "front",
          "craftable": false,
          "invulnerable": true,
          "group": "ecology",
@@ -20534,6 +21343,7 @@
       },
       "mechanical/geck-tank-base": {
          "material": "metal",
+         "layer": "front",
          "craftable": false,
          "invulnerable": true,
          "group": "ecology",
@@ -20553,6 +21363,7 @@
       },
       "mechanical/geck-tank": {
          "material": "metal",
+         "layer": "front",
          "craftable": false,
          "invulnerable": true,
          "group": "ecology",
@@ -20572,6 +21383,7 @@
       },
       "mechanical/geck-hoses": {
          "material": "metal",
+         "layer": "front",
          "craftable": false,
          "invulnerable": true,
          "group": "ecology",
@@ -20591,6 +21403,7 @@
       },
       "mechanical/geck-tree-base": {
          "material": "metal",
+         "layer": "front",
          "craftable": false,
          "invulnerable": true,
          "group": "ecology",
@@ -20610,6 +21423,7 @@
       },
       "mechanical/geck-tree-top": {
          "material": "metal",
+         "layer": "front",
          "craftable": false,
          "invulnerable": true,
          "group": "ecology",
@@ -20629,6 +21443,7 @@
       },
       "mechanical/geck-cog-large": {
          "material": "metal",
+         "layer": "front",
          "craftable": false,
          "invulnerable": true,
          "group": "ecology",
@@ -20648,6 +21463,7 @@
       },
       "mechanical/geck-cog-small": {
          "material": "metal",
+         "layer": "front",
          "craftable": false,
          "invulnerable": true,
          "group": "ecology",
@@ -20667,6 +21483,7 @@
       },
       "mechanical/composter": {
          "material": "metal",
+         "layer": "front",
          "craftable": false,
          "invulnerable": true,
          "group": "ecology",
@@ -20685,6 +21502,7 @@
       },
       "mechanical/composter-chamber": {
          "material": "metal",
+         "layer": "front",
          "craftable": false,
          "invulnerable": true,
          "group": "ecology",
@@ -20715,6 +21533,7 @@
       },
       "mechanical/composter-cover": {
          "material": "metal",
+         "layer": "front",
          "craftable": false,
          "invulnerable": true,
          "group": "ecology",
@@ -20734,6 +21553,7 @@
       },
       "mechanical/composter-fuel-tank": {
          "material": "metal",
+         "layer": "front",
          "craftable": false,
          "invulnerable": true,
          "group": "ecology",
@@ -20753,6 +21573,7 @@
       },
       "mechanical/composter-input-tube": {
          "material": "metal",
+         "layer": "front",
          "craftable": false,
          "invulnerable": true,
          "group": "ecology",
@@ -20772,6 +21593,7 @@
       },
       "mechanical/composter-output": {
          "material": "metal",
+         "layer": "front",
          "craftable": false,
          "invulnerable": true,
          "group": "ecology",
@@ -20791,6 +21613,7 @@
       },
       "mechanical/composter-turbine": {
          "material": "metal",
+         "layer": "front",
          "craftable": false,
          "invulnerable": true,
          "group": "ecology",
@@ -20810,6 +21633,7 @@
       },
       "mechanical/recycler": {
          "material": "metal",
+         "layer": "front",
          "craftable": false,
          "invulnerable": true,
          "group": "ecology",
@@ -20828,6 +21652,7 @@
       },
       "mechanical/recycler-chamber": {
          "material": "metal",
+         "layer": "front",
          "craftable": false,
          "invulnerable": true,
          "group": "ecology",
@@ -20852,6 +21677,7 @@
       },
       "mechanical/recycler-tubes": {
          "material": "metal",
+         "layer": "front",
          "craftable": false,
          "invulnerable": true,
          "group": "ecology",
@@ -20871,6 +21697,7 @@
       },
       "mechanical/recycler-pipe-base": {
          "material": "metal",
+         "layer": "front",
          "craftable": false,
          "invulnerable": true,
          "group": "ecology",
@@ -20890,6 +21717,7 @@
       },
       "mechanical/recycler-pipe": {
          "material": "metal",
+         "layer": "front",
          "craftable": false,
          "invulnerable": true,
          "group": "ecology",
@@ -20909,6 +21737,7 @@
       },
       "mechanical/recycler-gear-base": {
          "material": "metal",
+         "layer": "front",
          "craftable": false,
          "invulnerable": true,
          "group": "ecology",
@@ -20928,6 +21757,7 @@
       },
       "mechanical/recycler-gear": {
          "material": "metal",
+         "layer": "front",
          "craftable": false,
          "invulnerable": true,
          "group": "ecology",
@@ -20956,7 +21786,8 @@
             "trim"
          ],
          "group": "steam",
-         "steam": true
+         "steam": true,
+         "layer": "front"
       },
       "machines/gun-suppressor-base": {
          "invulnerable": true,
@@ -20970,6 +21801,7 @@
          ],
          "group": "steam",
          "steam": true,
+         "layer": "front",
          "inventory sprite": "machines/gun-suppressor-base-1",
          "inventory_frame": "inventory/machines/gun-suppressor",
          "use": {
@@ -20989,6 +21821,7 @@
          ],
          "group": "steam",
          "steam": true,
+         "layer": "front",
          "inventory sprite": "machines/gun-suppressor-base",
          "inventory_frame": "inventory/machines/gun-suppressor",
          "use": {
@@ -21021,6 +21854,7 @@
          ],
          "group": "steam",
          "steam": true,
+         "layer": "front",
          "inventory sprite": "machines/gun-suppressor-base",
          "inventory_frame": "inventory/machines/gun-suppressor",
          "use": {
@@ -21062,6 +21896,7 @@
          ],
          "group": "steam",
          "steam": true,
+         "layer": "front",
          "inventory sprite": "machines/gun-suppressor-base",
          "inventory_frame": "inventory/machines/gun-suppressor",
          "use": {
@@ -21107,6 +21942,7 @@
          ],
          "group": "steam",
          "steam": true,
+         "layer": "front",
          "inventory sprite": "machines/holograph-base-1",
          "inventory_frame": "inventory/machines/holograph",
          "use": {
@@ -21126,6 +21962,7 @@
          ],
          "group": "steam",
          "steam": true,
+         "layer": "front",
          "inventory sprite": "machines/holograph-base-1",
          "inventory_frame": "inventory/machines/holograph",
          "use": {
@@ -21179,6 +22016,7 @@
          ],
          "group": "steam",
          "steam": true,
+         "layer": "front",
          "inventory sprite": "machines/holograph-base-1",
          "inventory_frame": "inventory/machines/holograph",
          "use": {
@@ -21240,6 +22078,7 @@
          ],
          "group": "steam",
          "steam": true,
+         "layer": "front",
          "inventory sprite": "machines/holograph-base-1",
          "inventory_frame": "inventory/machines/holograph",
          "use": {
@@ -21305,6 +22144,7 @@
          ],
          "group": "steam",
          "steam": true,
+         "layer": "front",
          "inventory sprite": "machines/mass-spawner-base-1",
          "inventory_frame": "inventory/machines/mass-spawner",
          "use": {
@@ -21324,6 +22164,7 @@
          ],
          "group": "steam",
          "steam": true,
+         "layer": "front",
          "inventory sprite": "machines/mass-spawner-base",
          "inventory_frame": "inventory/machines/mass-spawner",
          "use": {
@@ -21420,6 +22261,7 @@
          ],
          "group": "steam",
          "steam": true,
+         "layer": "front",
          "inventory sprite": "machines/mass-spawner-base",
          "inventory_frame": "inventory/machines/mass-spawner",
          "use": {
@@ -21509,6 +22351,7 @@
          ],
          "group": "steam",
          "steam": true,
+         "layer": "front",
          "inventory sprite": "machines/mass-spawner-base",
          "inventory_frame": "inventory/machines/mass-spawner",
          "use": {
@@ -21606,6 +22449,7 @@
          ],
          "group": "steam",
          "steam": true,
+         "layer": "front",
          "inventory sprite": "machines/mass-teleporter-base-1",
          "inventory_frame": "inventory/machines/mass-teleporter",
          "use": {
@@ -21625,6 +22469,7 @@
          ],
          "group": "steam",
          "steam": true,
+         "layer": "front",
          "inventory sprite": "machines/mass-teleporter-base-1",
          "inventory_frame": "inventory/machines/mass-teleporter",
          "use": {
@@ -21705,6 +22550,7 @@
          ],
          "group": "steam",
          "steam": true,
+         "layer": "front",
          "inventory sprite": "machines/mass-teleporter-base-1",
          "inventory_frame": "inventory/machines/mass-teleporter",
          "use": {
@@ -21790,6 +22636,7 @@
          ],
          "group": "steam",
          "steam": true,
+         "layer": "front",
          "inventory sprite": "machines/mass-teleporter-base-1",
          "inventory_frame": "inventory/machines/mass-teleporter",
          "use": {
@@ -21879,6 +22726,7 @@
          ],
          "group": "steam",
          "steam": true,
+         "layer": "front",
          "inventory sprite": "machines/weather-machine-base-1",
          "inventory_frame": "inventory/machines/weather-machine",
          "use": {
@@ -21898,6 +22746,7 @@
          ],
          "group": "steam",
          "steam": true,
+         "layer": "front",
          "inventory sprite": "machines/weather-machine-base-1",
          "inventory_frame": "inventory/machines/weather-machine",
          "use": {
@@ -21978,6 +22827,7 @@
          ],
          "group": "steam",
          "steam": true,
+         "layer": "front",
          "inventory sprite": "machines/weather-machine-base-1",
          "inventory_frame": "inventory/machines/weather-machine",
          "use": {
@@ -22063,6 +22913,7 @@
          ],
          "group": "steam",
          "steam": true,
+         "layer": "front",
          "inventory sprite": "machines/weather-machine-base-1",
          "inventory_frame": "inventory/machines/weather-machine",
          "use": {
@@ -22157,7 +23008,8 @@
             }
          },
          "group": "infernal",
-         "gui": false
+         "gui": false,
+         "layer": "front"
       },
       "hell/expiator-face": {
          "material": "metal",
@@ -22177,6 +23029,7 @@
          },
          "group": "infernal",
          "gui": false,
+         "layer": "front",
          "code": 1003,
          "meta": "local",
          "title": "Expiator",
@@ -22208,6 +23061,7 @@
          },
          "group": "infernal",
          "gui": false,
+         "layer": "front",
          "code": 1000
       },
       "hell/expiator-frame": {
@@ -22228,6 +23082,7 @@
          },
          "group": "infernal",
          "gui": false,
+         "layer": "front",
          "code": 1001
       },
       "hell/expiator-tank": {
@@ -22248,6 +23103,7 @@
          },
          "group": "infernal",
          "gui": false,
+         "layer": "front",
          "code": 1002
       },
       "hell/expiator-tubes": {
@@ -22268,6 +23124,7 @@
          },
          "group": "infernal",
          "gui": false,
+         "layer": "front",
          "code": 1004
       },
       "hell/expiator-tube": {
@@ -22288,6 +23145,7 @@
          },
          "group": "infernal",
          "gui": false,
+         "layer": "front",
          "code": 1005
       },
       "hell/expiator-gear": {
@@ -22308,6 +23166,7 @@
          },
          "group": "infernal",
          "gui": false,
+         "layer": "front",
          "code": 1006
       },
       "hell/expiator-exhaust": {
@@ -22328,6 +23187,7 @@
          },
          "group": "infernal",
          "gui": false,
+         "layer": "front",
          "code": 1007
       },
       "hell/dish": {
@@ -22352,6 +23212,7 @@
          "color": "781e6e",
          "inventory": "",
          "karma": -5,
+         "layer": "front",
          "use": {
             "field_display": true
          }
@@ -22445,6 +23306,7 @@
          "biome": "arctic"
       },
       "arctic/snow": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -22821,10 +23683,16 @@
          "code": 433
       },
       "mechanical/teleporter": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -10,
          "code": 890,
+         "size": [
+            2,
+            3
+         ],
          "craftable": false,
          "field": 1,
          "meta": "global",
@@ -22836,6 +23704,7 @@
             "command": true
          },
          "mod": "change",
+         "inventory sprite": "mechanical/teleporter-glow",
          "place mod": 1,
          "spacing": 50,
          "hint": "Click on teleporters to quickly travel throughout the world. Inactive teleporters can be repaired with a click, progressing you towards a Teleporter Repairman achievement and unlocking the teleporter for use by players.",
@@ -22866,6 +23735,8 @@
          ]
       },
       "mechanical/teleporter-mini": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -5,
@@ -22920,6 +23791,8 @@
          ]
       },
       "mechanical/teleporter-mini-diamond": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "diamond sparkles",
          "karma": -3,
@@ -22987,6 +23860,8 @@
          }
       },
       "mechanical/teleporter-mini-onyx": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "diamond sparkles",
          "karma": -3,
@@ -23042,6 +23917,8 @@
          }
       },
       "mechanical/beacon": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -3,
@@ -23071,14 +23948,24 @@
          }
       },
       "mechanical/zone-teleporter": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -20,
          "code": 891,
+         "size": [
+            3,
+            3
+         ],
          "craftable": false,
          "field": 5,
          "meta": "global",
          "spacing": 50,
+         "block_size": [
+            3,
+            2
+         ],
          "background": "mechanical/zone-teleporter",
          "sprite animation": [
             "mechanical/zone-teleporter-glow",
@@ -23110,6 +23997,8 @@
          ]
       },
       "mechanical/target-teleporter": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -10,
@@ -23123,7 +24012,7 @@
             "mechanical/teleporter-glow",
             2
          ],
-         "sprite animation color": 111111,
+         "sprite animation color": "111111",
          "title": "One-Way Teleporter",
          "use": {
             "command": true,
@@ -23143,6 +24032,8 @@
          }
       },
       "mechanical/target-zone-teleporter": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -20,
@@ -23156,7 +24047,7 @@
             "mechanical/zone-teleporter-glow",
             2
          ],
-         "sprite animation color": 111111,
+         "sprite animation color": "111111",
          "title": "One-Way World Teleporter",
          "use": {
             "command": true,
@@ -23184,6 +24075,8 @@
          }
       },
       "mechanical/spawn-teleporter": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -20,
@@ -23215,6 +24108,8 @@
          "mod": "rotation"
       },
       "mechanical/ship-wheel": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -12,
@@ -23277,6 +24172,8 @@
          ]
       },
       "mechanical/control-panel": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -5,
@@ -23310,6 +24207,8 @@
          "crafting_helper": true
       },
       "mechanical/control-panel-large": {
+         "category": "mechanical",
+         "layer": "front",
          "material": "metal",
          "emitter": "powered-steam-infrequent",
          "karma": -5,
@@ -23395,6 +24294,10 @@
       },
       "industrial/vat": {
          "code": 400,
+         "size": [
+            2,
+            2
+         ],
          "material": "metal",
          "ingredients": [
             [
@@ -23409,6 +24312,10 @@
       },
       "industrial/vat-acid": {
          "code": 401,
+         "size": [
+            2,
+            2
+         ],
          "material": "metal",
          "background": "industrial/vat",
          "sprite": [
@@ -23423,6 +24330,10 @@
          "mod": "rotation",
          "rotation": "mirror",
          "code": 402,
+         "size": [
+            3,
+            1
+         ],
          "material": "metal",
          "sprite animation": [
             "industrial/conveyor-belt",
@@ -23473,6 +24384,10 @@
       },
       "industrial/chain-large": {
          "code": 405,
+         "size": [
+            2,
+            1
+         ],
          "material": "metal",
          "ingredients": [
             [
@@ -23525,6 +24440,10 @@
       },
       "industrial/crane-large": {
          "code": 408,
+         "size": [
+            2,
+            2
+         ],
          "material": "metal",
          "ingredients": [
             [
@@ -23549,6 +24468,10 @@
       },
       "industrial/crane-base-large": {
          "code": 409,
+         "size": [
+            2,
+            1
+         ],
          "material": "metal",
          "ingredients": [
             [
@@ -23762,6 +24685,7 @@
          "code": 414
       },
       "building/candy-cane-block": {
+         "layer": "front",
          "tileable": true,
          "opaque": true,
          "whole": true,
@@ -23847,10 +24771,12 @@
          ]
       },
       "tools/melee": {
+         "category": "tools",
          "damage_duration": 0.444,
          "damage range": 6
       },
       "tools/pickaxe": {
+         "category": "tools",
          "damage_duration": 0.444,
          "damage range": 6,
          "code": 1024,
@@ -23870,9 +24796,11 @@
             "rubble/iron"
          ],
          "karma": -2,
+         "glow_sprite": "tools/pickaxe-glow",
          "hintt": "This handy tool allows mining of most items in the game. It is useless in protected areas, though, so break out a shovel if you find yourself unable to mine."
       },
       "tools/pickaxe-fine": {
+         "category": "tools",
          "damage_duration": 0.444,
          "damage range": 6,
          "code": 1025,
@@ -23900,6 +24828,7 @@
          "karma": -3
       },
       "tools/pickaxe-diamond": {
+         "category": "tools",
          "damage_duration": 0.444,
          "damage range": 6,
          "code": 1027,
@@ -23938,6 +24867,7 @@
          "rarity": 3
       },
       "tools/pickaxe-onyx": {
+         "category": "tools",
          "damage_duration": 0.444,
          "damage range": 6,
          "code": 1026,
@@ -23976,6 +24906,7 @@
          "rarity": 4
       },
       "tools/pickaxe-platinum": {
+         "category": "tools",
          "damage_duration": 0.444,
          "damage range": 6,
          "code": 61,
@@ -24010,6 +24941,7 @@
          "rarity": 5
       },
       "tools/sledgehammer": {
+         "category": "tools",
          "damage_duration": 0.444,
          "damage range": 6,
          "code": 1028,
@@ -24028,9 +24960,11 @@
          ],
          "karma": -2,
          "group": "sledgehammer",
+         "glow_sprite": "tools/sledgehammer-glow",
          "hintt": "Sledges offer excellent melee damage and the highest chance for critical hits. Their bludgeoning damage type is especially useful against automata."
       },
       "tools/sledgehammer-fine": {
+         "category": "tools",
          "damage_duration": 0.444,
          "damage range": 6,
          "code": 1029,
@@ -24057,6 +24991,7 @@
          "group": "sledgehammer"
       },
       "tools/sledgehammer-diamond": {
+         "category": "tools",
          "damage_duration": 0.444,
          "damage range": 6,
          "code": 1043,
@@ -24090,6 +25025,7 @@
          "group": "sledgehammer"
       },
       "tools/sledgehammer-onyx": {
+         "category": "tools",
          "damage_duration": 0.444,
          "damage range": 6,
          "code": 1044,
@@ -24123,6 +25059,7 @@
          "group": "sledgehammer"
       },
       "tools/shovel": {
+         "category": "tools",
          "damage_duration": 0.444,
          "damage range": 6,
          "code": 1039,
@@ -24144,9 +25081,11 @@
          ],
          "karma": -2,
          "group": "shovel",
+         "glow_sprite": "tools/shovel-glow",
          "hintt": "The shovel allows fast digging of earth and digging through protected areas. This is especially useful for making your way to the entrance of underground dungeons, which are usually protected by brain devices."
       },
       "tools/shovel-diamond": {
+         "category": "tools",
          "damage_duration": 0.444,
          "damage range": 6,
          "code": 1040,
@@ -24182,6 +25121,7 @@
          "group": "shovel"
       },
       "tools/shovel-onyx": {
+         "category": "tools",
          "damage_duration": 0.444,
          "damage range": 6,
          "code": 1041,
@@ -24217,6 +25157,7 @@
          "group": "shovel"
       },
       "tools/shovel-platinum": {
+         "category": "tools",
          "damage_duration": 0.444,
          "damage range": 6,
          "code": 66,
@@ -24249,6 +25190,7 @@
          "emitter": "platinum sparkles"
       },
       "tools/tesla-club": {
+         "category": "tools",
          "damage_duration": 0.444,
          "damage range": 6,
          "code": 1045,
@@ -24284,6 +25226,7 @@
          "rarity": 3
       },
       "tools/hatchet": {
+         "category": "tools",
          "damage_duration": 0.444,
          "damage range": 6,
          "code": 1023,
@@ -24307,6 +25250,7 @@
          "group": "hatchet"
       },
       "tools/hatchet-diamond": {
+         "category": "tools",
          "damage_duration": 0.444,
          "damage range": 6,
          "code": 370,
@@ -24339,6 +25283,7 @@
          "rarity": 3
       },
       "tools/hatchet-onyx": {
+         "category": "tools",
          "damage_duration": 0.444,
          "damage range": 6,
          "code": 371,
@@ -24371,6 +25316,7 @@
          "rarity": 4
       },
       "tools/hatchet-platinum": {
+         "category": "tools",
          "damage_duration": 0.444,
          "damage range": 6,
          "code": 67,
@@ -24400,6 +25346,7 @@
          "emitter": "platinum sparkles"
       },
       "tools/net": {
+         "category": "tools",
          "damage_duration": 0.444,
          "damage range": 6,
          "code": 1009,
@@ -24411,6 +25358,7 @@
          "hintt": "A weak melee tool, the net can be used to catch butterflies and insects and effectively turn them into pleasant wall decorations."
       },
       "tools/net-diamond": {
+         "category": "tools",
          "damage_duration": 0.444,
          "damage range": 6,
          "code": 368,
@@ -24441,6 +25389,7 @@
          ]
       },
       "tools/net-onyx": {
+         "category": "tools",
          "damage_duration": 0.444,
          "damage range": 6,
          "code": 369,
@@ -24471,6 +25420,7 @@
          ]
       },
       "tools/net-platinum": {
+         "category": "tools",
          "damage_duration": 0.444,
          "damage range": 6,
          "code": 68,
@@ -24498,6 +25448,7 @@
          "emitter": "platinum sparkles"
       },
       "tools/cane": {
+         "category": "tools",
          "damage_duration": 0.444,
          "damage range": 6,
          "code": 365,
@@ -24522,6 +25473,7 @@
          ]
       },
       "tools/cane-diamond": {
+         "category": "tools",
          "damage_duration": 0.444,
          "damage range": 6,
          "code": 366,
@@ -24548,6 +25500,7 @@
          "title": "Diamond Cane"
       },
       "tools/cane-onyx": {
+         "category": "tools",
          "damage_duration": 0.444,
          "damage range": 6,
          "code": 367,
@@ -24574,6 +25527,7 @@
          "title": "Onyx Cane"
       },
       "tools/cane-platinum": {
+         "category": "tools",
          "damage_duration": 0.444,
          "damage range": 6,
          "code": 69,
@@ -24601,6 +25555,7 @@
          "emitter": "platinum sparkles"
       },
       "tools/spade": {
+         "category": "tools",
          "damage_duration": 0.444,
          "damage range": 6,
          "code": 347,
@@ -24630,6 +25585,7 @@
          "hintt": "The spade is a slow mining tool that allows you to occasionally recoup bulbs when mining grown flowers. Use better spades and increase your Horticulture skill to improve your chances of recouping!"
       },
       "tools/spade-diamond": {
+         "category": "tools",
          "damage_duration": 0.444,
          "damage range": 6,
          "code": 348,
@@ -24659,6 +25615,7 @@
          "title": "Diamond Spade"
       },
       "tools/spade-onyx": {
+         "category": "tools",
          "damage_duration": 0.444,
          "damage range": 6,
          "code": 349,
@@ -24688,6 +25645,7 @@
          "title": "Onyx Spade"
       },
       "tools/spade-platinum": {
+         "category": "tools",
          "damage_duration": 0.444,
          "damage range": 6,
          "code": 70,
@@ -24719,6 +25677,7 @@
          "rarity": 5
       },
       "tools/rapier": {
+         "category": "tools",
          "damage_duration": 0.444,
          "damage range": 6,
          "code": 237,
@@ -24743,6 +25702,7 @@
          ]
       },
       "tools/rapier-diamond": {
+         "category": "tools",
          "damage_duration": 0.444,
          "damage range": 6,
          "code": 238,
@@ -24772,6 +25732,7 @@
          "title": "Diamond Rapier"
       },
       "tools/rapier-onyx": {
+         "category": "tools",
          "damage_duration": 0.444,
          "damage range": 6,
          "code": 239,
@@ -24801,6 +25762,7 @@
          "title": "Onyx Rapier"
       },
       "tools/rapier-platinum": {
+         "category": "tools",
          "damage_duration": 0.444,
          "damage range": 6,
          "code": 71,
@@ -25944,6 +26906,7 @@
          "color": "ffee00"
       },
       "shield": {
+         "category": "shields",
          "action": "shield",
          "inventory type": "accessory",
          "gui": [
@@ -25952,6 +26915,7 @@
          ]
       },
       "shields/force": {
+         "category": "shields",
          "action": "shield",
          "inventory type": "accessory",
          "gui": [
@@ -25985,6 +26949,7 @@
          "rarity": 3
       },
       "shields/acid": {
+         "category": "shields",
          "action": "shield",
          "inventory type": "accessory",
          "gui": [
@@ -26013,6 +26978,7 @@
          "karma": -4
       },
       "shields/fire": {
+         "category": "shields",
          "action": "shield",
          "inventory type": "accessory",
          "gui": [
@@ -26048,6 +27014,7 @@
       },
       "ammo/bullets": {
          "code": 1035,
+         "layer": "front",
          "ingredients": [
             "ground/lead-ore",
             "ammo/gunpowder"
@@ -26057,6 +27024,7 @@
       },
       "ammo/gunpowder": {
          "code": 1036,
+         "layer": "front",
          "material": "wood",
          "ingredients": [
             "building/wood",
@@ -26067,10 +27035,12 @@
          "karma": -2
       },
       "accessory": {
-         "inventory type": "accessory"
+         "inventory type": "accessory",
+         "category": "accessories"
       },
       "charm": {
          "inventory type": "accessory",
+         "category": "accessories",
          "use": {
             "skill bonus": true
          },
@@ -26078,6 +27048,7 @@
       },
       "charm-l1": {
          "inventory type": "accessory",
+         "category": "accessories",
          "use": {
             "skill bonus": true
          },
@@ -26087,6 +27058,7 @@
       },
       "charm-l2": {
          "inventory type": "accessory",
+         "category": "accessories",
          "use": {
             "skill bonus": true
          },
@@ -26096,6 +27068,7 @@
       },
       "charm-l3": {
          "inventory type": "accessory",
+         "category": "accessories",
          "use": {
             "skill bonus": true
          },
@@ -26105,6 +27078,7 @@
       },
       "accessories/stopwatch": {
          "inventory type": "accessory",
+         "category": "accessories",
          "use": {
             "skill bonus": true
          },
@@ -26162,6 +27136,7 @@
       },
       "accessories/pocketwatch": {
          "inventory type": "accessory",
+         "category": "accessories",
          "use": {
             "skill bonus": true
          },
@@ -26219,6 +27194,7 @@
       },
       "accessories/pocketwatch-onyx": {
          "inventory type": "accessory",
+         "category": "accessories",
          "use": {
             "skill bonus": true
          },
@@ -26277,6 +27253,7 @@
       },
       "accessories/clover": {
          "inventory type": "accessory",
+         "category": "accessories",
          "use": {
             "skill bonus": true
          },
@@ -26291,6 +27268,7 @@
       },
       "accessories/horseshoe": {
          "inventory type": "accessory",
+         "category": "accessories",
          "use": {
             "skill bonus": true
          },
@@ -26305,6 +27283,7 @@
       },
       "accessories/rabbitfoot": {
          "inventory type": "accessory",
+         "category": "accessories",
          "use": {
             "skill bonus": true
          },
@@ -26319,6 +27298,7 @@
       },
       "accessories/seashell": {
          "inventory type": "accessory",
+         "category": "accessories",
          "use": {
             "skill bonus": true
          },
@@ -26333,6 +27313,7 @@
       },
       "accessories/sand-dollar": {
          "inventory type": "accessory",
+         "category": "accessories",
          "use": {
             "skill bonus": true
          },
@@ -26347,6 +27328,7 @@
       },
       "accessories/conch": {
          "inventory type": "accessory",
+         "category": "accessories",
          "use": {
             "skill bonus": true
          },
@@ -26361,6 +27343,7 @@
       },
       "accessories/army-knife": {
          "inventory type": "accessory",
+         "category": "accessories",
          "use": {
             "skill bonus": true
          },
@@ -26415,6 +27398,7 @@
       },
       "accessories/army-knife-diamond": {
          "inventory type": "accessory",
+         "category": "accessories",
          "use": {
             "skill bonus": true
          },
@@ -26473,6 +27457,7 @@
       },
       "accessories/army-knife-onyx": {
          "inventory type": "accessory",
+         "category": "accessories",
          "use": {
             "skill bonus": true
          },
@@ -26531,6 +27516,7 @@
       },
       "accessories/agility-brass": {
          "inventory type": "accessory",
+         "category": "accessories",
          "use": {
             "skill bonus": true
          },
@@ -26585,6 +27571,7 @@
       },
       "accessories/agility-diamond": {
          "inventory type": "accessory",
+         "category": "accessories",
          "use": {
             "skill bonus": true
          },
@@ -26643,6 +27630,7 @@
       },
       "accessories/agility-onyx": {
          "inventory type": "accessory",
+         "category": "accessories",
          "use": {
             "skill bonus": true
          },
@@ -26701,6 +27689,7 @@
       },
       "accessories/scope-brass": {
          "inventory type": "accessory",
+         "category": "accessories",
          "use": {
             "skill bonus": true
          },
@@ -26755,6 +27744,7 @@
       },
       "accessories/scope-diamond": {
          "inventory type": "accessory",
+         "category": "accessories",
          "use": {
             "skill bonus": true
          },
@@ -26813,6 +27803,7 @@
       },
       "accessories/scope-onyx": {
          "inventory type": "accessory",
+         "category": "accessories",
          "use": {
             "skill bonus": true
          },
@@ -26871,6 +27862,7 @@
       },
       "accessories/rake": {
          "inventory type": "accessory",
+         "category": "accessories",
          "use": {
             "skill bonus": true
          },
@@ -26885,6 +27877,7 @@
       },
       "accessories/rake-diamond": {
          "inventory type": "accessory",
+         "category": "accessories",
          "use": {
             "skill bonus": true
          },
@@ -26900,6 +27893,7 @@
       },
       "accessories/rake-onyx": {
          "inventory type": "accessory",
+         "category": "accessories",
          "use": {
             "skill bonus": true
          },
@@ -26915,6 +27909,7 @@
       },
       "accessories/science-magnifying-glass": {
          "inventory type": "accessory",
+         "category": "accessories",
          "use": {
             "skill bonus": true
          },
@@ -26931,6 +27926,7 @@
       },
       "accessories/science-magnifying-headset": {
          "inventory type": "accessory",
+         "category": "accessories",
          "use": {
             "skill bonus": true
          },
@@ -26947,6 +27943,7 @@
       },
       "accessories/science-microscope": {
          "inventory type": "accessory",
+         "category": "accessories",
          "use": {
             "skill bonus": true
          },
@@ -26963,6 +27960,7 @@
       },
       "accessories/glove": {
          "inventory type": "accessory",
+         "category": "accessories",
          "use": {
             "skill bonus": true
          },
@@ -27017,6 +28015,7 @@
       },
       "accessories/glove-diamond": {
          "inventory type": "accessory",
+         "category": "accessories",
          "use": {
             "skill bonus": true
          },
@@ -27075,6 +28074,7 @@
       },
       "accessories/glove-onyx": {
          "inventory type": "accessory",
+         "category": "accessories",
          "use": {
             "skill bonus": true
          },
@@ -27133,6 +28133,7 @@
       },
       "accessories/t-square": {
          "inventory type": "accessory",
+         "category": "accessories",
          "use": {
             "skill bonus": true
          },
@@ -27148,6 +28149,7 @@
       },
       "accessories/abacus": {
          "inventory type": "accessory",
+         "category": "accessories",
          "use": {
             "skill bonus": true
          },
@@ -27189,6 +28191,7 @@
       },
       "accessories/interface": {
          "inventory type": "accessory",
+         "category": "accessories",
          "use": {
             "skill bonus": true
          },
@@ -27275,6 +28278,7 @@
       },
       "accessories/butler-extender": {
          "inventory type": "accessory",
+         "category": "accessories",
          "code": 1014,
          "use": {
             "butler extension": true
@@ -27287,6 +28291,7 @@
       },
       "accessories/building-extender": {
          "inventory type": "accessory",
+         "category": "accessories",
          "code": 1015,
          "use": {
             "building extension": true
@@ -27299,6 +28304,7 @@
       },
       "accessories/makeup": {
          "inventory type": "accessory",
+         "category": "accessories",
          "code": 1016,
          "use": {
             "makeup": true
@@ -27310,6 +28316,7 @@
       },
       "accessories/teleporter-infinite": {
          "inventory type": "accessory",
+         "category": "accessories",
          "code": 1018,
          "action": "teleport",
          "title": "Infinite Portable Teleporter",
@@ -27319,6 +28326,7 @@
       },
       "accessories/exo-skin": {
          "inventory type": "accessory",
+         "category": "accessories",
          "code": 1126,
          "use": {
             "hazmat": true
@@ -27330,6 +28338,7 @@
       },
       "accessories/breathing-apparatus": {
          "inventory type": "accessory",
+         "category": "accessories",
          "code": 1127,
          "use": {
             "breath": true
@@ -27342,6 +28351,7 @@
       },
       "accessories/toolbelt": {
          "inventory type": "accessory",
+         "category": "accessories",
          "code": 1129,
          "use": {
             "capacity": true
@@ -27354,6 +28364,7 @@
       },
       "accessories/afterburner": {
          "inventory type": "accessory",
+         "category": "accessories",
          "code": 1179,
          "use": {
             "afterburner": true
@@ -27363,21 +28374,25 @@
       },
       "accessories/whistle-brass": {
          "inventory type": "accessory",
+         "category": "accessories",
          "code": 1222,
          "title": "Brass Whistle"
       },
       "accessories/whistle-diamond": {
          "inventory type": "accessory",
+         "category": "accessories",
          "code": 1223,
          "title": "Diamond Whistle"
       },
       "accessories/whistle-onyx": {
          "inventory type": "accessory",
+         "category": "accessories",
          "code": 1191,
          "title": "Onyx Whistle"
       },
       "accessories/dowsing-rod": {
          "inventory type": "accessory",
+         "category": "accessories",
          "use": {
             "dowsing": true
          },
@@ -27389,6 +28404,7 @@
       },
       "accessories/compressor-onyx": {
          "inventory type": "accessory",
+         "category": "accessories",
          "code": 1053,
          "use": {
             "steam bonus": true
@@ -27425,6 +28441,7 @@
       },
       "accessories/compressor": {
          "inventory type": "accessory",
+         "category": "accessories",
          "code": 1079,
          "use": {
             "steam bonus": true
@@ -27457,6 +28474,7 @@
       },
       "accessories/compressor-basic": {
          "inventory type": "accessory",
+         "category": "accessories",
          "code": 1055,
          "use": {
             "steam bonus": true
@@ -27484,6 +28502,7 @@
       },
       "accessories/flashlight-brass": {
          "inventory type": "accessory",
+         "category": "accessories",
          "code": 1054,
          "light": 7,
          "title": "Brass Flashlight",
@@ -27505,6 +28524,7 @@
       },
       "accessories/flashlight-diamond": {
          "inventory type": "accessory",
+         "category": "accessories",
          "code": 1093,
          "light": 8,
          "title": "Diamond Flashlight",
@@ -27530,6 +28550,7 @@
       },
       "accessories/flashlight-onyx": {
          "inventory type": "accessory",
+         "category": "accessories",
          "code": 1058,
          "light": 9,
          "title": "Onyx Flashlight",
@@ -27553,6 +28574,7 @@
       },
       "accessories/jetpack": {
          "inventory type": "accessory",
+         "category": "accessories",
          "code": 1060,
          "craftable": false,
          "use": {
@@ -27570,6 +28592,7 @@
       },
       "accessories/jetpack-brass": {
          "inventory type": "accessory",
+         "category": "accessories",
          "code": 1062,
          "use": {
             "fly": true
@@ -27600,6 +28623,7 @@
       },
       "accessories/jetpack-diamond": {
          "inventory type": "accessory",
+         "category": "accessories",
          "code": 1069,
          "use": {
             "fly": true
@@ -27636,6 +28660,7 @@
       },
       "accessories/jetpack-onyx": {
          "inventory type": "accessory",
+         "category": "accessories",
          "code": 1061,
          "use": {
             "fly": true
@@ -27672,6 +28697,7 @@
       },
       "accessories/zeppelin": {
          "inventory type": "accessory",
+         "category": "accessories",
          "code": 1063,
          "use": {
             "hover": true
@@ -27705,6 +28731,7 @@
       },
       "accessories/aquapack-brass": {
          "inventory type": "accessory",
+         "category": "accessories",
          "code": 1011,
          "use": {
             "propel": true
@@ -27726,6 +28753,7 @@
       },
       "accessories/aquapack-diamond": {
          "inventory type": "accessory",
+         "category": "accessories",
          "code": 1012,
          "use": {
             "propel": true
@@ -27748,6 +28776,7 @@
       },
       "accessories/aquapack-onyx": {
          "inventory type": "accessory",
+         "category": "accessories",
          "code": 1013,
          "use": {
             "propel": true
@@ -28203,13 +29232,15 @@
          "craftable": false,
          "placeable": false,
          "gui": false,
-         "wardrobe": true
+         "wardrobe": true,
+         "category": "tops"
       },
       "tops/tuxedo": {
          "craftable": false,
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 1300
       },
       "tops/waistcoat-gray": {
@@ -28217,6 +29248,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 1301,
          "title": "Waistcoat",
          "base": true
@@ -28226,6 +29258,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 1317,
          "title": "Waistcoat",
          "base": true
@@ -28235,6 +29268,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 1302,
          "title": "Waistcoat",
          "base": true
@@ -28244,6 +29278,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 1318,
          "title": "Waistcoat",
          "base": true
@@ -28253,6 +29288,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 1319,
          "base": true
       },
@@ -28261,6 +29297,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 1320,
          "base": true
       },
@@ -28269,6 +29306,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 1303,
          "title": "Waistcoat"
       },
@@ -28277,6 +29315,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 1304,
          "title": "Coat"
       },
@@ -28285,6 +29324,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 1305,
          "title": "Coat"
       },
@@ -28293,6 +29333,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 1306,
          "title": "Corset"
       },
@@ -28301,6 +29342,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 1307,
          "title": "Corset",
          "base": true
@@ -28310,6 +29352,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 1308,
          "title": "Corset",
          "base": true
@@ -28319,6 +29362,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 1309,
          "title": "Tesla T-shirt"
       },
@@ -28327,6 +29371,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 1310,
          "title": "Charles T-shirt"
       },
@@ -28335,6 +29380,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 1311,
          "title": "Plaid",
          "base": true
@@ -28344,6 +29390,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 1312,
          "title": "Coat"
       },
@@ -28352,6 +29399,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 1313
       },
       "tops/camo-white": {
@@ -28359,6 +29407,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 1399,
          "deprecated": true
       },
@@ -28367,6 +29416,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 1314
       },
       "tops/polka": {
@@ -28374,6 +29424,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 1315
       },
       "tops/indy": {
@@ -28381,6 +29432,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 1316
       },
       "tops/clown": {
@@ -28388,6 +29440,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 1321
       },
       "tops/jacket-lady-green": {
@@ -28395,6 +29448,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "title": "Jacket",
          "code": 1322
       },
@@ -28403,6 +29457,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "title": "I Heart Deepworld",
          "code": 1323
       },
@@ -28411,6 +29466,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 1324
       },
       "tops/pirate-lady": {
@@ -28418,6 +29474,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 1325,
          "title": "Lady Pirate"
       },
@@ -28426,6 +29483,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 1326
       },
       "tops/parka-orange": {
@@ -28433,6 +29491,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 326
       },
       "tops/fur-coat": {
@@ -28440,6 +29499,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 327,
          "title": "White Fur Coat"
       },
@@ -28448,6 +29508,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 328,
          "title": "Brown Fur Coat",
          "spine_sprite": "tops/fur-coat-brown"
@@ -28457,6 +29518,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 1327,
          "hand": "tops/mad-scientist-hand"
       },
@@ -28465,6 +29527,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 1328,
          "hand": "tops/diving-suit-hand"
       },
@@ -28473,6 +29536,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 1221
       },
       "tops/brain-shirt": {
@@ -28480,6 +29544,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 1294
       },
       "tops/admiral": {
@@ -28487,6 +29552,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 1295
       },
       "tops/royal": {
@@ -28494,6 +29560,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 1296
       },
       "tops/mystic": {
@@ -28501,6 +29568,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 1293
       },
       "tops/android": {
@@ -28508,6 +29576,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 1292
       },
       "tops/santa": {
@@ -28515,6 +29584,7 @@
          "placeable": false,
          "gui": true,
          "wardrobe": true,
+         "category": "tops",
          "code": 1285
       },
       "tops/elf": {
@@ -28522,6 +29592,7 @@
          "placeable": false,
          "gui": true,
          "wardrobe": true,
+         "category": "tops",
          "code": 1286
       },
       "tops/vampire": {
@@ -28529,6 +29600,7 @@
          "placeable": false,
          "gui": true,
          "wardrobe": true,
+         "category": "tops",
          "code": 1280
       },
       "tops/brain": {
@@ -28536,6 +29608,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 1250
       },
       "tops/aviation": {
@@ -28543,6 +29616,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 1251
       },
       "tops/magician": {
@@ -28550,6 +29624,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 1252
       },
       "tops/brass": {
@@ -28557,6 +29632,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 1253
       },
       "tops/prepboy": {
@@ -28564,6 +29640,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 1254
       },
       "tops/prepgirl": {
@@ -28571,6 +29648,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 1255
       },
       "tops/plant": {
@@ -28578,6 +29656,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 1256
       },
       "tops/rain": {
@@ -28585,6 +29664,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 1257
       },
       "tops/reaper": {
@@ -28592,6 +29672,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 1258
       },
       "tops/rainbow": {
@@ -28599,6 +29680,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 1259
       },
       "tops/samaurai": {
@@ -28606,6 +29688,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 1260
       },
       "tops/watermelon": {
@@ -28613,6 +29696,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 1261
       },
       "tops/trooper": {
@@ -28620,6 +29704,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 1262
       },
       "tops/winter": {
@@ -28627,6 +29712,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 1263
       },
       "tops/xmas": {
@@ -28634,6 +29720,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 190
       },
       "tops/pajamas": {
@@ -28641,6 +29728,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 174
       },
       "tops/karate": {
@@ -28648,6 +29736,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 175
       },
       "tops/valkyrie": {
@@ -28655,6 +29744,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 176
       },
       "tops/chicken": {
@@ -28662,6 +29752,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 177,
          "title": "Chicken Shirt"
       },
@@ -28670,6 +29761,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 178
       },
       "tops/cheerleader": {
@@ -28677,6 +29769,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 179
       },
       "tops/flamenco": {
@@ -28684,19 +29777,22 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "tops",
          "code": 180
       },
       "headgear": {
          "craftable": false,
          "placeable": false,
          "gui": false,
-         "wardrobe": true
+         "wardrobe": true,
+         "category": "headgear"
       },
       "headgear/none": {
          "craftable": false,
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1330,
          "sprite": null,
          "inventory_frame": "inventory/none",
@@ -28707,6 +29803,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1331,
          "sprite": "headgear/tophat",
          "title": "Top Hat",
@@ -28717,6 +29814,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1332,
          "sprite": "headgear/tophat",
          "title": "Top Hat",
@@ -28727,6 +29825,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1333,
          "title": "Onyx Helmet"
       },
@@ -28735,6 +29834,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1334
       },
       "headgear/bowlerhat-black": {
@@ -28742,6 +29842,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1335,
          "sprite": "headgear/bowlerhat",
          "title": "Bowler",
@@ -28752,6 +29853,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1336,
          "sprite": "headgear/bowlerhat",
          "title": "Bowler",
@@ -28762,6 +29864,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1337,
          "sprite": "headgear/newsie-hat",
          "title": "Newsie",
@@ -28772,6 +29875,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1338,
          "sprite": "headgear/newsie-hat",
          "title": "Newsie",
@@ -28782,6 +29886,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1339,
          "sprite": "headgear/winter-hat",
          "title": "Northern Hat",
@@ -28792,6 +29897,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1341
       },
       "headgear/beanie": {
@@ -28799,6 +29905,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1344
       },
       "headgear/cat": {
@@ -28806,6 +29913,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1345,
          "title": "Animal Hat"
       },
@@ -28814,6 +29922,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1375
       },
       "headgear/diving-helmet": {
@@ -28821,6 +29930,7 @@
          "placeable": false,
          "gui": true,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1376
       },
       "headgear/space-helmet": {
@@ -28828,6 +29938,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1377
       },
       "headgear/panda": {
@@ -28835,6 +29946,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1387
       },
       "headgear/tiara": {
@@ -28842,6 +29954,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1379
       },
       "headgear/indy": {
@@ -28849,6 +29962,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1351
       },
       "headgear/cthulhu": {
@@ -28856,6 +29970,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1352
       },
       "headgear/baseball": {
@@ -28863,6 +29978,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1450
       },
       "headgear/bonnet-2": {
@@ -28870,6 +29986,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1451,
          "title": "Bonnet"
       },
@@ -28878,6 +29995,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1452
       },
       "headgear/constable-hat": {
@@ -28885,6 +30003,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1453
       },
       "headgear/buckingham": {
@@ -28892,6 +30011,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1454
       },
       "headgear/jester": {
@@ -28899,6 +30019,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1416
       },
       "headgear/dunce": {
@@ -28906,6 +30027,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1417
       },
       "headgear/antlers": {
@@ -28913,6 +30035,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1418
       },
       "headgear/toad": {
@@ -28920,6 +30043,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1419
       },
       "headgear/pirate": {
@@ -28927,6 +30051,7 @@
          "placeable": false,
          "gui": true,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1421
       },
       "headgear/mad-scientist": {
@@ -28934,6 +30059,7 @@
          "placeable": false,
          "gui": true,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1423,
          "title": "Thinking Cap"
       },
@@ -28942,6 +30068,7 @@
          "placeable": false,
          "gui": true,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1424
       },
       "headgear/parka": {
@@ -28949,6 +30076,7 @@
          "placeable": false,
          "gui": true,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1425,
          "title": "Parka Hat"
       },
@@ -28957,6 +30085,7 @@
          "placeable": false,
          "gui": true,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1329
       },
       "headgear/brain-hat": {
@@ -28964,6 +30093,7 @@
          "placeable": false,
          "gui": true,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1299
       },
       "headgear/admiral": {
@@ -28971,6 +30101,7 @@
          "placeable": false,
          "gui": true,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1298
       },
       "headgear/mystic": {
@@ -28978,6 +30109,7 @@
          "placeable": false,
          "gui": true,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1297
       },
       "headgear/bucket": {
@@ -28985,6 +30117,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1291
       },
       "headgear/android": {
@@ -28992,6 +30125,7 @@
          "placeable": false,
          "gui": true,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1290
       },
       "headgear/terrapus": {
@@ -28999,6 +30133,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1289
       },
       "headgear/beekeeper": {
@@ -29006,6 +30141,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1288
       },
       "headgear/santa": {
@@ -29013,6 +30149,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1283
       },
       "headgear/elf": {
@@ -29020,6 +30157,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1284
       },
       "headgear/bright-idea": {
@@ -29027,6 +30165,7 @@
          "placeable": false,
          "gui": true,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1264
       },
       "headgear/ice-cream": {
@@ -29034,6 +30173,7 @@
          "placeable": false,
          "gui": true,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1265
       },
       "headgear/headphones": {
@@ -29041,6 +30181,7 @@
          "placeable": false,
          "gui": true,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1266
       },
       "headgear/halo": {
@@ -29048,6 +30189,7 @@
          "placeable": false,
          "gui": true,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1267
       },
       "headgear/dark-queen": {
@@ -29055,6 +30197,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1268
       },
       "headgear/dark-king": {
@@ -29062,6 +30205,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1269
       },
       "headgear/magician-hat": {
@@ -29069,6 +30213,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1270
       },
       "headgear/earmuffs": {
@@ -29076,6 +30221,7 @@
          "placeable": false,
          "gui": true,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1271
       },
       "headgear/earmuffs-hamburger": {
@@ -29083,6 +30229,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 322,
          "title": "Hamburger Earmuffs"
       },
@@ -29091,6 +30238,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 323,
          "title": "Cat Earmuffs"
       },
@@ -29099,6 +30247,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 324,
          "title": "Fancy Earmuffs"
       },
@@ -29107,6 +30256,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 325,
          "title": "Strawberry Earmuffs"
       },
@@ -29115,6 +30265,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 321
       },
       "headgear/winter-pink": {
@@ -29122,6 +30273,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 320,
          "title": "Pink Winter Hat"
       },
@@ -29130,6 +30282,7 @@
          "placeable": false,
          "gui": true,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1272
       },
       "headgear/plant-head": {
@@ -29137,6 +30290,7 @@
          "placeable": false,
          "gui": true,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1273
       },
       "headgear/reaper-hat": {
@@ -29144,6 +30298,7 @@
          "placeable": false,
          "gui": true,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1274
       },
       "headgear/rain-hat": {
@@ -29151,6 +30306,7 @@
          "placeable": false,
          "gui": true,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1275
       },
       "headgear/ribbon": {
@@ -29158,6 +30314,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1276
       },
       "headgear/watermelon-hat": {
@@ -29165,6 +30322,7 @@
          "placeable": false,
          "gui": true,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1277
       },
       "headgear/christmas-tree-hat": {
@@ -29172,6 +30330,7 @@
          "placeable": false,
          "gui": true,
          "wardrobe": true,
+         "category": "headgear",
          "code": 334
       },
       "headgear/helmet-camo": {
@@ -29179,6 +30338,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1552,
          "title": "Camo Helmet"
       },
@@ -29187,6 +30347,7 @@
          "placeable": false,
          "gui": true,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1553
       },
       "headgear/party": {
@@ -29194,6 +30355,7 @@
          "placeable": false,
          "gui": true,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1554,
          "title": "Party Hat"
       },
@@ -29202,6 +30364,7 @@
          "placeable": false,
          "gui": true,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1555,
          "title": "Mining Accident"
       },
@@ -29210,6 +30373,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1556
       },
       "headgear/unicorn": {
@@ -29217,6 +30381,7 @@
          "placeable": false,
          "gui": true,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1557
       },
       "headgear/tinfoil": {
@@ -29224,6 +30389,7 @@
          "placeable": false,
          "gui": true,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1558
       },
       "headgear/lampshade": {
@@ -29231,6 +30397,7 @@
          "placeable": false,
          "gui": true,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1559
       },
       "headgear/diablo": {
@@ -29238,6 +30405,7 @@
          "placeable": false,
          "gui": true,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1560
       },
       "headgear/umbrella": {
@@ -29245,6 +30413,7 @@
          "placeable": false,
          "gui": true,
          "wardrobe": true,
+         "category": "headgear",
          "code": 1561
       },
       "headgear/pajamas": {
@@ -29252,6 +30421,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 182
       },
       "headgear/karate": {
@@ -29259,6 +30429,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 183
       },
       "headgear/valkyrie": {
@@ -29266,6 +30437,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 184
       },
       "headgear/chicken": {
@@ -29273,6 +30445,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 185,
          "title": "Chicken Hat"
       },
@@ -29281,6 +30454,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 186
       },
       "headgear/shark": {
@@ -29288,6 +30462,7 @@
          "placeable": false,
          "gui": true,
          "wardrobe": true,
+         "category": "headgear",
          "code": 131
       },
       "headgear/snake": {
@@ -29295,6 +30470,7 @@
          "placeable": false,
          "gui": true,
          "wardrobe": true,
+         "category": "headgear",
          "code": 132
       },
       "headgear/crow": {
@@ -29302,6 +30478,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 133
       },
       "headgear/bunny-ears": {
@@ -29309,6 +30486,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 134
       },
       "headgear/kitty-ears": {
@@ -29316,6 +30494,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 135
       },
       "headgear/hibiscus": {
@@ -29323,6 +30502,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 136
       },
       "headgear/mudder": {
@@ -29330,6 +30510,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 137
       },
       "headgear/bandana": {
@@ -29337,6 +30518,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 138
       },
       "headgear/paper": {
@@ -29344,6 +30526,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 139
       },
       "headgear/sombrero": {
@@ -29351,6 +30534,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 140
       },
       "headgear/kitty-hat": {
@@ -29358,6 +30542,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 141
       },
       "headgear/tiny-top-hat": {
@@ -29365,6 +30550,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 142
       },
       "headgear/nessie": {
@@ -29372,6 +30558,7 @@
          "placeable": false,
          "gui": true,
          "wardrobe": true,
+         "category": "headgear",
          "code": 143
       },
       "headgear/knight-helmet": {
@@ -29379,6 +30566,7 @@
          "placeable": false,
          "gui": true,
          "wardrobe": true,
+         "category": "headgear",
          "code": 144
       },
       "headgear/elven-circlet": {
@@ -29386,6 +30574,7 @@
          "placeable": false,
          "gui": false,
          "wardrobe": true,
+         "category": "headgear",
          "code": 145
       },
       "facialgear": {
@@ -32068,6 +33257,8 @@
          "color": "374287"
       },
       "blueprint": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -12,
@@ -32076,6 +33267,8 @@
          "crafting_helper": true
       },
       "blueprint-small-brass": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -32114,6 +33307,8 @@
          "inventory_frame": "inventory/furniture/blueprint-brass"
       },
       "blueprint-small-diamond": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -32152,6 +33347,8 @@
          "inventory_frame": "inventory/furniture/blueprint-diamond"
       },
       "blueprint-small-onyx": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -32190,6 +33387,8 @@
          "inventory_frame": "inventory/furniture/blueprint-onyx"
       },
       "blueprint-large-brass": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -32226,6 +33425,8 @@
          "inventory_frame": "inventory/furniture/blueprint-brass"
       },
       "blueprint-large-diamond": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -32262,6 +33463,8 @@
          "inventory_frame": "inventory/furniture/blueprint-diamond"
       },
       "blueprint-large-onyx": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -32298,6 +33501,8 @@
          "inventory_frame": "inventory/furniture/blueprint-onyx"
       },
       "furniture/blueprint-boot-brass": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -32345,6 +33550,8 @@
          ]
       },
       "furniture/blueprint-boot-diamond": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -32392,6 +33599,8 @@
          ]
       },
       "furniture/blueprint-boot-onyx": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -32439,6 +33648,8 @@
          ]
       },
       "furniture/blueprint-butlerbot-brass": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -32486,6 +33697,8 @@
          ]
       },
       "furniture/blueprint-butlerbot-diamond": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -32533,6 +33746,8 @@
          ]
       },
       "furniture/blueprint-butlerbot-onyx": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -32580,6 +33795,8 @@
          ]
       },
       "furniture/blueprint-clock-brass": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -32627,6 +33844,8 @@
          ]
       },
       "furniture/blueprint-clock-diamond": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -32674,6 +33893,8 @@
          ]
       },
       "furniture/blueprint-clock-onyx": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -32721,6 +33942,8 @@
          ]
       },
       "furniture/blueprint-compressor-brass": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -32768,6 +33991,8 @@
          ]
       },
       "furniture/blueprint-compressor-diamond": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -32815,6 +34040,8 @@
          ]
       },
       "furniture/blueprint-compressor-onyx": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -32862,6 +34089,8 @@
          ]
       },
       "furniture/blueprint-dish-brass": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -32909,6 +34138,8 @@
          ]
       },
       "furniture/blueprint-dish-diamond": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -32956,6 +34187,8 @@
          ]
       },
       "furniture/blueprint-dish-onyx": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -33003,6 +34236,8 @@
          ]
       },
       "furniture/blueprint-exploder-brass": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -33050,6 +34285,8 @@
          ]
       },
       "furniture/blueprint-exploder-diamond": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -33097,6 +34334,8 @@
          ]
       },
       "furniture/blueprint-exploder-onyx": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -33144,6 +34383,8 @@
          ]
       },
       "furniture/blueprint-glove-brass": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -33191,6 +34432,8 @@
          ]
       },
       "furniture/blueprint-glove-diamond": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -33238,6 +34481,8 @@
          ]
       },
       "furniture/blueprint-glove-onyx": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -33285,6 +34530,8 @@
          ]
       },
       "furniture/blueprint-gun-suppressor-brass": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -33330,6 +34577,8 @@
          ]
       },
       "furniture/blueprint-gun-suppressor-diamond": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -33375,6 +34624,8 @@
          ]
       },
       "furniture/blueprint-gun-suppressor-onyx": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -33420,6 +34671,8 @@
          ]
       },
       "furniture/blueprint-holograph-brass": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -33465,6 +34718,8 @@
          ]
       },
       "furniture/blueprint-holograph-diamond": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -33510,6 +34765,8 @@
          ]
       },
       "furniture/blueprint-holograph-onyx": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -33555,6 +34812,8 @@
          ]
       },
       "furniture/blueprint-knife-brass": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -33602,6 +34861,8 @@
          ]
       },
       "furniture/blueprint-knife-diamond": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -33649,6 +34910,8 @@
          ]
       },
       "furniture/blueprint-knife-onyx": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -33696,6 +34959,8 @@
          ]
       },
       "furniture/blueprint-mass-spawner-brass": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -33741,6 +35006,8 @@
          ]
       },
       "furniture/blueprint-mass-spawner-diamond": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -33786,6 +35053,8 @@
          ]
       },
       "furniture/blueprint-mass-spawner-onyx": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -33831,6 +35100,8 @@
          ]
       },
       "furniture/blueprint-mass-teleporter-brass": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -33876,6 +35147,8 @@
          ]
       },
       "furniture/blueprint-mass-teleporter-diamond": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -33921,6 +35194,8 @@
          ]
       },
       "furniture/blueprint-mass-teleporter-onyx": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -33966,6 +35241,8 @@
          ]
       },
       "furniture/blueprint-scope-brass": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -34013,6 +35290,8 @@
          ]
       },
       "furniture/blueprint-scope-diamond": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -34060,6 +35339,8 @@
          ]
       },
       "furniture/blueprint-scope-onyx": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -34107,6 +35388,8 @@
          ]
       },
       "furniture/blueprint-spawner-brass": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -34154,6 +35437,8 @@
          ]
       },
       "furniture/blueprint-spawner-diamond": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -34201,6 +35486,8 @@
          ]
       },
       "furniture/blueprint-spawner-onyx": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -34248,6 +35535,8 @@
          ]
       },
       "furniture/blueprint-weapon-upgrade-brass": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -34295,6 +35584,8 @@
          ]
       },
       "furniture/blueprint-weapon-upgrade-diamond": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -34342,6 +35633,8 @@
          ]
       },
       "furniture/blueprint-weapon-upgrade-onyx": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -34389,6 +35682,8 @@
          ]
       },
       "furniture/blueprint-weather-machine-brass": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -34434,6 +35729,8 @@
          ]
       },
       "furniture/blueprint-weather-machine-diamond": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
@@ -34479,6 +35776,8 @@
          ]
       },
       "furniture/blueprint-weather-machine-onyx": {
+         "category": "furniture",
+         "layer": "front",
          "material": "wood",
          "craftable": false,
          "karma": -10,
